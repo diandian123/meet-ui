@@ -1,0 +1,28 @@
+<mt-tab
+    items="{{tabItems}}"
+    position="left"
+    tabHeight="{{tabHeight}}">
+    <scroll-view
+        scroll-y
+        wx:for="{{tabItems}}"
+        wx:key="index"
+        slot="{{item.id}}"
+        style="position: absolute; left: 0; right: 0; top: 0; bottom: 0;">
+        <view class="safe">
+            <mt-card
+                wx:for="{{20}}"
+                wx:key="idx"
+                wx:for-index="idx"
+                wx:for-item="itemName"
+                hasDivider
+                image="/example/images/poster.jpg"
+                imageWidth="150"
+                imageHeight="150"
+                title="[{{item.title}}] 标题标题标题标题标题标题"
+                titleSize="30"
+                titleBold="{{true}}"
+                desc="描述信息">
+            </mt-card>
+        </view>
+    </scroll-view>
+</mt-tab>

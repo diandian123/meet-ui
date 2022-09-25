@@ -1,0 +1,106 @@
+.about .header {
+  height: 500rpx;
+  position: relative;
+}
+
+.about .banner {
+  display: block;
+  width: 100%;
+  height: 500rpx;
+}
+
+.about .slogo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 40rpx;
+  color: #fff;
+  padding: 0 50rpx;
+  text-align: center;
+}
+
+.about .title {
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.about .subtitle {
+  font-size: 30rpx;
+}
+
+.about .main {
+  padding: 36rpx 0;
+  border-top-left-radius: 32rpx;
+  border-top-right-radius: 32rpx;
+}
+
+.about .help .nav-contact {
+  display: block;
+  width: 100% !important;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 24rpx;
+}
+
+.about .help .nav-contact .mt-cell {
+  margin: 0;
+}
+
+.about .group {
+  padding: 40rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #808080;
+  font-size: 26rpx;
+}
+
+.about .group-image {
+  display: block;
+  width: 220rpx;
+  height: 220rpx;
+  margin-bottom: 10rpx;
+}
+
+.popup__about .mt-popup--bottom {
+  padding: 0;
+}
+
+.mod__dialog .mod__dialog__img {
+  width: 100%;
+  height: 300rpx;
+}
+
+.logo {
+  width: 148rpx;
+  height: 148rpx;
+  background-color: #07c16c;
+  border-radius: 15% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto 36rpx;
+}
+
+.logo-img {
+  display: block;
+  width: 80rpx;
+  height: 58rpx;
+}
+
+.feature {
+  height: 52vh;
+}
+
+.feature .item {
+  margin-bottom: 30rpx;
+}

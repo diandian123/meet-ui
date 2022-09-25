@@ -1,0 +1,81 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="titleSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义吸附距离</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="offsetSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义吸附范围</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="innerSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">scroll-view容器吸附</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="scrollViewSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">Tab标签头吸顶显示</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="tabsSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表格头部吸顶显示</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="tableSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">组合吸顶</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="complexSticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <!-- <view class="pannel">
+                    <view class="pannel-hd">多个吸顶容器</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="manySticky">演示</mt-button>
+                        </view>
+                    </view>
+                </view> -->
+            </view>
+        </view>
+    </view>
+</view>

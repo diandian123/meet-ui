@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-popup": "meet-ui-miniapp/popup/index",
+        "mt-actionsheet": "meet-ui-miniapp/actionsheet/index",
+        "mt-comment": "meet-ui-miniapp/comment/index",
+        "comment-input": "../comment-input/index"
+    }
+}

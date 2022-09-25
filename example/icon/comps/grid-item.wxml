@@ -1,0 +1,2 @@
+<mt-icon name="{{item.name}}"></mt-icon>
+<text class="demo-grid__text">{{item.title}}</text>

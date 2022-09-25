@@ -1,0 +1,9 @@
+.details {
+    background-image: linear-gradient(0, #01d5d8, #47d998);
+}
+.section-hd__text {
+    color: #fff !important;
+}
+.pannel {
+    background: transparent;
+}

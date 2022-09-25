@@ -1,0 +1,50 @@
+<view class="container">
+    <mt-navbar
+        position="fixed"
+        title="{{navBarStatus.title}}"
+        titleColor="{{pageStatus !== 'normal' ? '#333333' : '#ffffff'}}"
+        transform="{{navBarStatus.change}}">
+    </mt-navbar>
+    <view class="main safe">
+        <block wx:if="{{pageStatus === 'loading'}}">
+            <mt-loading scene="page" type="meet"></mt-loading>
+        </block>
+        <block wx:elif="{{pageStatus === 'error'}}">
+            <mt-error icon="{{errorStatus.icon}}" msg="{{errorStatus.msg}}" traceId="{{errorStatus.traceId}}"></mt-error>
+        </block>
+        <block wx:elif="{{pageStatus === 'empty'}}">
+            <mt-empty icon="{{emptyStatus.icon}}" msg="{{emptyStatus.msg}}"></mt-empty>
+        </block>
+        <block wx:else>
+            <view class="home">
+                <!-- 背景图 -->
+                <image class="bg" src="./images/bg.png"></image>
+                <view class="main">
+                    <view class="hd">
+                        <view class="logo">
+                            <image src="./images/meet.png" class="logo-img"></image>
+                        </view>
+                        <view class="title">MEET UI</view>
+                        <view class="slogo">重新定义用户界面、用户交互、用户体验</view>
+                    </view>
+                    <view class="bd">
+                        <view
+                            wx:for="{{Categorys}}"
+                            wx:key="index"
+                            data-url="{{item.url}}"
+                            bindtap="goCategory"
+                            class="item {{index === 1 || index=== 5 ? 'item-purple' :''}}  {{index === 2 || index=== 3 ? 'item-lightblue' :''}}">
+                            <view class="item-shawdow">
+                                <image src="{{item.image}}" class="item-img"></image>
+                            </view>
+                            <text class="item-title">{{item.title}}</text>
+                            <text class="item-decs">{{item.desc}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>
+<mt-dialog id="meetDialog"></mt-dialog>

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-divider": "meet-ui-miniapp/divider"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mt-tab": "meet-ui-miniapp/tab",
+        "mt-icon": "meet-ui-miniapp/icon",
+        "mt-loading": "meet-ui-miniapp/loading",
+        "mt-toast": "meet-ui-miniapp/toast"
+    }
+}

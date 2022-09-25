@@ -1,0 +1,20 @@
+<mt-result
+    icon="/example/images/meet.png"
+    title="标题内容"
+    desc="描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息"
+    btnText="前往首页"
+    bindclick="toHome">
+    <view style="width: 100%; text-align: left;">
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+    <mt-button slot="footer" type="link" size="m" bindtap="goBack" style="margin-top: 20rpx;">返回</mt-button>
+</mt-result>

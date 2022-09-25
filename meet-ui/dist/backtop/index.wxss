@@ -1,0 +1,1 @@
+.mt-backtop{position:fixed;right:36rpx;bottom:100rpx;z-index:1000;width:108rpx;height:108rpx;border-radius:50%;box-sizing:border-box;background-color:#07c16c;display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}

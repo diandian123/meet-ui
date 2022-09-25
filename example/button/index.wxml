@@ -1,0 +1,141 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd plr">
+                        <view class="ptb">
+                            <mt-button size="l" bindtap="handleDialog">主要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="warning" size="l" bindtap="handleDialog">警示按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="plain" size="l" bindtap="handleDialog">次要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="secondary" size="l" bindtap="handleDialog">次要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="link" size="l" bindtap="handleDialog">链接按钮</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">禁用状态</view>
+                    <view class="pannel-bd plr">
+                        <view class="ptb">
+                            <mt-button size="l" disabled>主要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="warning" size="l" disabled>警示按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="plain" size="l" disabled>次要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="secondary" size="l" disabled>次要按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="link" size="l" disabled>链接按钮</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义按钮图标</view>
+                    <view class="pannel-bd plr">
+                        <view class="ptb">
+                            <mt-button size="l" icon="/example/images/about_a.png">图标按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="plain" size="l" icon="/example/images/about_b.png">图标按钮</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">微信特征按钮</view>
+                    <view class="pannel-bd plr">
+                        <view class="ptb">
+                            <mt-button type="plain" size="l" bindtap="getUserInfo">获取微信昵称、头像</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button type="plain" size="l" open-type="share">分享给好友</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button
+                                type="plain"
+                                size="l"
+                                open-type="contact"
+                                bindcontact="handleContact">
+                                联系客服
+                            </mt-button>
+                        </view>
+                        <!-- 个人版小程序不支持获取手机号 -->
+                        <!-- <view class="ptb">
+                            <mt-button
+                                size="l"
+                                open-type="getPhoneNumber"
+                                bindgetphonenumber="getPhoneNumber">
+                                获取手机号
+                            </mt-button>
+                        </view> -->
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">按钮尺寸</view>
+                    <view class="pannel-bd plr">
+                        <!-- <view class="ptb hidden">
+                            <mt-button>自适应(100%)</mt-button>
+                        </view> -->
+                        <view class="ptb">
+                            <mt-button size="l">长按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button size="m">中按钮</mt-button>
+                        </view>
+                        <view class="ptb">
+                            <mt-button size="s">短按钮</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel hidden">
+                    <view class="pannel-hd">自定义按钮样式</view>
+                    <view class="pannel-bd">
+                        <view class="pa">
+                            <mt-button width="576" radius="18">圆角按钮</mt-button>
+                        </view>
+                        <view class="pa">
+                            <mt-button type="plain" width="576" radius="18">圆角按钮</mt-button>
+                        </view>
+                        <view class="pa">
+                            <mt-button bgColor="#4876ff" bdColor="#4876ff" enableHover="{{false}}" size="l">蓝色按钮</mt-button>
+                        </view>
+                        <view class="pa">
+                            <mt-button bgColor="#fec51d" bdColor="#fec51d" textColor="#333" enableHover="{{false}}" size="l">黄色按钮</mt-button>
+                        </view>
+                        <view class="pa tc">
+                            <mt-button height="72" radius="36" class="dib mr">内联按钮</mt-button>
+                            <mt-button type="plain" height="72" radius="36" class="dib">内联按钮</mt-button>
+                        </view>
+                        <view class="pa tc">
+                            <mt-button height="60" radius="30" textSize="28" class="dib mr">小按钮</mt-button>
+                            <mt-button type="plain" height="60" radius="30" textSize="28" class="dib">小按钮</mt-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 公共对话框 -->
+<mt-dialog id="meetDialog"></mt-dialog>

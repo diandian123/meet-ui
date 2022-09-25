@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mt-popover": "meet-ui-miniapp/popover",
+        "mt-icon": "meet-ui-miniapp/icon",
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-cell": "meet-ui-miniapp/cell"
+    }
+}

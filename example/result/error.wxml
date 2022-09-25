@@ -1,0 +1,7 @@
+<mt-result
+    type="error"
+    title="操作失败"
+    desc="描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息"
+    btnText="再试一次"
+    bindclick="redirectTo">
+</mt-result>

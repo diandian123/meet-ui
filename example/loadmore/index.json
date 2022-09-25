@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-button": "meet-ui-miniapp/button"
+    }
+}

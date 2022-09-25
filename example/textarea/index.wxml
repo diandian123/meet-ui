@@ -1,0 +1,161 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示输入计数</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea hasCount maxLength="300"></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义高度</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea height="80"></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">高度随内容自动撑开</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea autoHeight></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义占位提醒</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea placeholder="请评论内容..."></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义文本框样式</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea bdColor="transparent" bgColor="#f7f8fa" hasCount maxLength="300"></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">只读状态</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea value="做对产品、业务真正有帮助的“实用”技术研发！" readonly></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">禁用状态</view>
+                    <view class="pannel-bd pa">
+                        <mt-textarea value="做对产品、业务真正有帮助的“实用”技术研发！" disabled></mt-textarea>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（一）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            required
+                            hasDivider
+                            error="出错提醒出错提醒">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" value="MEET UI, MEET YOU!"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="textarea"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-textarea
+                                bdColor="null"
+                                value="做对产品、业务真正有帮助的“实用”技术研发！"
+                                hasCount
+                                maxLength="300"
+                                autoHeight>
+                            </mt-textarea>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（二）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            required
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right"
+                            error="出错提醒出错提醒">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null" value="MEET UI, MEET YOU!"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="textarea"
+                            label="字段名称"
+                            required
+                            position="right">
+                            <mt-textarea
+                                bdColor="null"
+                                value="做对产品、业务真正有帮助的“实用”技术研发！"
+                                hasCount
+                                maxLength="300"
+                                autoHeight>
+                            </mt-textarea>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

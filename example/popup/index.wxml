@@ -1,0 +1,175 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">底部弹层</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup1">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">底部弹层（支持手势关闭）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup2">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">底部弹层（支持内容分页）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup3">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">顶部弹层</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup4">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">居中弹层</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup5">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">幕帘效果</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup6">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">评论区应用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toComment">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 底部弹层 -->
+<mt-popup
+    visible="{{popup1Status}}"
+    title="标题"
+    bindclose="togglePopup1">
+    <mt-cell-group>
+        <mt-cell
+            wx:for="{{caseDate.list}}"
+            wx:key="index"
+            icon="{{item.icon}}"
+            title="{{item.title}}"
+            url="{{item.url}}"
+            hasArrow="{{true}}">
+        </mt-cell>
+    </mt-cell-group>
+</mt-popup>
+<!-- 底部弹层（支持手势关闭） -->
+<mt-popup
+    visible="{{popup2Status}}"
+    hasGesture
+    title="标题"
+    bindclose="togglePopup2">
+    <view>
+        <mt-cell
+            wx:for="{{caseDate.list}}"
+            wx:key="index"
+            icon="{{item.icon}}"
+            title="{{item.title}}"
+            url="{{item.url}}"
+            hasArrow="{{true}}">
+        </mt-cell>
+    </view>
+</mt-popup>
+<!-- 底部弹层（支持内容分页） -->
+<mt-popup
+    visible="{{popup3Status}}"
+    hasGesture
+    title="标题"
+    bindloadMore='haldLoadMore'
+    bindclose="togglePopup3">
+    <view>
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{caseDate.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+            <mt-cell
+                wx:for="{{caseDate.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+            <mt-cell
+                wx:for="{{caseDate.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</mt-popup>
+<!-- 顶部弹层 -->
+<mt-popup
+    position="top"
+    visible="{{popup4Status}}"
+    hasTopClose="{{false}}"
+    bindclose="togglePopup4">
+    <mt-cell-group>
+        <mt-cell
+            wx:for="{{caseDate.list}}"
+            wx:key="index"
+            icon="{{item.icon}}"
+            title="{{item.title}}"
+            url="{{item.url}}"
+            hasArrow="{{true}}">
+        </mt-cell>
+    </mt-cell-group>
+</mt-popup>
+<!-- 中间弹层 -->
+<mt-popup
+    position="center"
+    width="600rpx"
+    visible="{{popup5Status}}"
+    title="标题"
+    bindclose="togglePopup5">
+    <mt-cell-group>
+        <mt-cell
+            wx:for="{{caseDate.list}}"
+            wx:key="index"
+            icon="{{item.icon}}"
+            title="{{item.title}}"
+            url="{{item.url}}"
+            hasArrow="{{true}}">
+        </mt-cell>
+    </mt-cell-group>
+</mt-popup>
+<!-- 幕帘效果 -->
+<mt-popup
+    position="center"
+    width="600rpx"
+    height="338rpx"
+    visible="{{popup6Status}}"
+    hasRadius="{{false}}"
+    hasTopClose="{{false}}"
+    hasBottomClose="{{true}}"
+    bindclose="togglePopup6">
+    <image src="../images/poster.jpg" style="width: 100%; height: 100%; border: 10rpx solid #fff;"></image>
+</mt-popup>

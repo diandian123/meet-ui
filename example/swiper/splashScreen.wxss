@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.splash__swiper {
+  display: block;
+  flex: 1;
+  margin-bottom: 10rpx;
+}
+
+.splash__ft {
+  padding-bottom: 80rpx;
+}
+
+.agreement {
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  padding: 50rpx 60rpx 30rpx;
+}
+
+.agreement .mt-checkbox {
+  padding: 0;
+}
+
+.agreement .mt-icon {
+  font-size: 40rpx !important;
+}
+
+.agreement .mt-checkbox__text {
+  font-size: 28rpx;
+}
+
+.agreement .agreement__link {
+  display: inline;
+  color: #63a1ff;
+}

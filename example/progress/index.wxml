@@ -1,0 +1,129 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-progress">
+                            <mt-progress value="{{number1}}"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number2}}" valueInside></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number3}}" fontColor="#333" showValue></mt-progress>
+                        </view>
+                        <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{0}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{0}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义颜色</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-progress">
+                            <mt-progress value="{{number4}}" curColor="#fec51d" radius="30"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number5}}" curColor="#4876ff" radius="30" valueInside></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number6}}" curColor="#fa5151" fontColor="#fa5151" radius="30" showValue></mt-progress>
+                        </view>
+                        <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{1}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{1}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义条纹</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-progress">
+                            <mt-progress stripe value="{{number7}}" curColor="#fec51d" radius="30"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress stripe value="{{number8}}" curColor="#4876ff" radius="30" valueInside></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress stripe value="{{number9}}" curColor="#fa5151" fontColor="#fa5151" radius="30" showValue></mt-progress>
+                        </view>
+                        <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{2}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{2}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义图片</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-progress">
+                            <mt-progress type="image" value="{{number10}}" image="/example/progress/images/progress.png" radius="30"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress type="image" value="{{number11}}" image="/example/progress/images/progress.png" fontColor="#333" radius="30" valueInside></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress type="image" value="{{number12}}" image="/example/progress/images/progress.png" fontColor="#333" radius="30" showValue></mt-progress>
+                        </view>
+                        <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{3}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{3}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义高度</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-progress">
+                            <mt-progress value="{{number13}}" height="16" radius="66"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number14}}" height="16" curColor="#fec51d" radius="66"></mt-progress>
+                        </view>
+                        <view class="mod-progress">
+                            <mt-progress value="{{number15}}" height="16" curColor="#fa5151" radius="66"></mt-progress>
+                        </view>
+                        <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{4}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{4}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">环形进度</view>
+                    <view class="pannel-bd pa">
+                        <view class="mod-circle">
+                            <view class="mod-progress">
+                                <mt-progress type="circle" value="{{number16}}" fontColor="#333" showValue></mt-progress>
+                            </view>
+                            <view class="mod-progress">
+                                <mt-progress type="circle" value="{{number17}}" curColor="#fec51d" fontColor="#333">
+                                    <text slot="label">待完成</text>
+                                </mt-progress>
+                            </view>
+                            <view class="mod-progress">
+                                <mt-progress type="circle" value="{{number18}}" curColor="linear-gradient(#7affaf, #7a88ff)" fontColor="#333" showValue></mt-progress>
+                            </view>
+                        </view>
+                        <!-- <view class="tc">
+                            <mt-button height="66" textSize="30" radius="66" class="dib mr" data-index="{{5}}" bindtap="increase">增加</mt-button>
+                            <mt-button type="plain" height="66" textSize="30" radius="66" data-index="{{5}}" class="dib" bindtap="decrease">减少</mt-button>
+                        </view> -->
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

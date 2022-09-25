@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mt-tab": "meet-ui-miniapp/tab",
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-cell": "meet-ui-miniapp/cell",
+        "mt-card": "meet-ui-miniapp/card"
+    }
+}

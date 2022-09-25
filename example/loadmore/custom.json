@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Loadmore示例",
+    "usingComponents": {
+        "mt-loadmore": "meet-ui-miniapp/loadmore",
+        "mt-avatar": "meet-ui-miniapp/avatar"
+    }
+}

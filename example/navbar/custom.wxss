@@ -1,0 +1,127 @@
+page {
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+}
+
+.main__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.mod-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.mod-navbar__search {
+  width: 360rpx;
+  height: 66rpx;
+  background: #fff;
+  border-radius: 66rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-left: 20rpx;
+}
+
+.mod-navbar__search {
+  position: relative;
+}
+
+.mod-navbar__search::after {
+  content: '';
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+  border-radius: 66rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .mod-navbar__search::after {
+    width: 200%;
+    height: 200%;
+    border-radius: 132rpx;
+    transform: scale(0.5);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+  .mod-navbar__search::after {
+    width: 300%;
+    height: 300%;
+    border-radius: 198rpx;
+    transform: scale(0.333);
+  }
+}
+
+.mod-navbar__search-text {
+  font-size: 32rpx;
+  color: #808080;
+  margin-left: 20rpx;
+}
+
+.mod-navbar__notice {
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 10rpx;
+  position: relative;
+}
+
+.mod-navbar__notice .mt-badge__bd--top {
+  transform: translate(75%, -30%);
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 398rpx;
+}
+
+.mod-swiper {
+  padding: 6rpx 0 0;
+}
+
+.mod-grid {
+  padding: 0 36rpx;
+  background-color: #fff;
+}
+
+.mod-grid .mt-grid__main {
+  justify-content: space-between !important;
+}
+
+.mod-grid .mt-grid__main .mt-grid__item {
+  width: 100rpx !important;
+}

@@ -1,0 +1,78 @@
+<!-- 页面加载中 -->
+<block wx:if="{{pageStatus === 'loading'}}">
+    <mt-loading scene="page" type="meet"></mt-loading>
+</block>
+<!-- 页面异常状态 -->
+<block wx:elif="{{pageStatus === 'error'}}">
+    <mt-error scene="tab" icon="{{errorStatus.icon}}" text="{{errorStatus.text}}" traceId="{{errorStatus.traceId}}"></mt-error>
+</block>
+<!-- 页面空状态 -->
+<block wx:elif="{{pageStatus === 'empty'}}">
+    <mt-empty icon="{{emptyStatus.icon}}" text="{{emptyStatus.text}}"></mt-empty>
+</block>
+<!-- 页面正常状态 -->
+<block wx:else>
+    <view class="container">
+        <!-- 自定义导航栏 -->
+        <mt-navbar>
+            <view class="mod-navbar">
+                <view class="mod-navbar__search" style="background-color: {{searchBgColor}};">
+                    <mt-icon name="mt-icon--search" color="#808080"></mt-icon>
+                    <text class="mod-navbar__search-text">搜索</text>
+                </view>
+                <view bindtap="handleNotice" class="mod-navbar__notice">
+                    <mt-badge position="top" value="5新消息">
+                        <mt-icon name="mt-icon--notice" color="#353535"></mt-icon>
+                    </mt-badge>
+                </view>
+            </view>
+        </mt-navbar>
+        <view wx:if="{{showHeaderBg}}" class="header__bg" style="background: {{headerBg[bannerIndex]}};"></view>
+        <!-- 页面正常状态 -->
+        <view class="main">
+            <scroll-view
+                scroll-y="true"
+                refresher-enabled="{{true}}"
+                refresher-triggered="{{refreshStatus}}"
+                bindrefresherrefresh="handleRefresh"
+                bindscroll="handleScroll"
+                class="main__scroll safe">
+                <view class="mod-swiper">
+                    <mt-swiper
+                        width="672"
+                        height="270"
+                        items="{{swiperItems}}"
+                        bindchange="handleSwiperChange">
+                    </mt-swiper>
+                </view>
+                <view class="mod-grid">
+                    <mt-grid
+                        items="{{gridData}}"
+                        column="4"
+                        iconWidth="72"
+                        iconHeight="72"
+                        iconRadius="36"
+                        titleSize="26">
+                    </mt-grid>
+                </view>
+                <view class="mod-list">
+                    <mt-card
+                        wx:for="{{20}}"
+                        wx:key="index"
+                        image="/example/images/poster.jpg"
+                        imagePosition="right"
+                        imageWidth="220"
+                        imageHeight="160"
+                        title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                        desc="描述信息"
+                        hasDivider="{{true}}">
+                    </mt-card>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</block>
+<!-- 公共提示 -->
+<mt-toast id="meetToast"></mt-toast>
+<!-- 公共对话框 -->
+<mt-dialog id="meetDialog"></mt-dialog>

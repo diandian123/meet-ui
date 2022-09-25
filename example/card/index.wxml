@@ -1,0 +1,195 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">左图右文</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            image="/example/images/poster.jpg"
+                            imageWidth="135"
+                            imageHeight="135"
+                            title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">左文右图</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            image="/example/images/poster.jpg"
+                            imagePosition="right"
+                            imageWidth="220"
+                            imageHeight="180"
+                            title="标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">上图下文</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            type="video"
+                            image="/example/images/poster.jpg"
+                            subscript="12:50"
+                            imagePosition="top"
+                            imageHeight="340"
+                            title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            titleBold="{{true}}"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">上文下图</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            type="video"
+                            image="/example/images/poster.jpg"
+                            subscript="12:50"
+                            imagePosition="bottom"
+                            imageHeight="340"
+                            title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            titleBold="{{true}}"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示一级标题</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            image="/example/images/poster.jpg"
+                            imageWidth="180"
+                            imageHeight="180"
+                            keypoint="一级标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            title="二级标题标题标题标题标题标题标题标题标题标题标题"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示富文本</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            image="/example/images/poster.jpg"
+                            imageWidth="180"
+                            imageHeight="180"
+                            isRich="{{true}}"
+                            keypoint="一级标题<span style='color: #ff8f1f; font-weight: bold; '>文本高亮显示</span>重点信息重点信息重点信息重点信息主题"
+                            title="二级标题<span style='color: #ff8f1f; font-weight: bold; '>文本高亮显示</span>标题标题标题标题标题标题标题标题标题标题标题"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">无图片显示</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示标签</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            image="/example/images/poster.jpg"
+                            imageWidth="180"
+                            imageHeight="225"
+                            title="标题标题标题标题标题标题标题标题标题标题标题"
+                            titleBold="{{true}}"
+                            tags="{{[{ text: '标签一' }, { text: '标签二' }]}}"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示排行</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            ranking="{{1}}"
+                            image="/example/images/poster.jpg"
+                            imageWidth="180"
+                            imageHeight="225"
+                            title="标题标题标题标题标题标题标题标题标题标题标题"
+                            titleBold="{{true}}"
+                            tags="{{[{ text: '标签一' }, { text: '标签二' }]}}"
+                            desc="描述信息">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">文章列表</view>
+                    <view class="pannel-bd">
+                        <view class="article">
+                            <mt-card
+                                wx:for="{{case_1}}"
+                                wx:key="index"
+                                hasDivider="{{true}}"
+                                image="{{item.image}}"
+                                imagePosition="right"
+                                imageWidth="220"
+                                imageHeight="180"
+                                title="{{item.title}}"
+                                maxLine="3"
+                                desc="{{item.desc}}">
+                            </mt-card>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel bgtr">
+                    <view class="pannel-hd">视频列表</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            type="video"
+                            wx:for="{{case_2}}"
+                            wx:key="index"
+                            radius="24"
+                            image="{{item.image}}"
+                            subscript="{{item.subscript}}"
+                            imagePosition="bottom"
+                            imageHeight="340"
+                            title="{{item.title}}"
+                            titleBold="{{true}}"
+                            desc="{{item.desc}}"
+                            class="video">
+                        </mt-card>
+                    </view>
+                </view>
+                <view class="pannel bgtr">
+                    <view class="pannel-hd">排行榜</view>
+                    <view class="pannel-bd">
+                        <mt-card
+                            wx:for="{{case_3}}"
+                            wx:key="index"
+                            radius="24"
+                            ranking="{{item.ranking}}"
+                            image="{{item.image}}"
+                            imageWidth="180"
+                            imageHeight="225"
+                            title="{{item.title}}"
+                            titleSize="34"
+                            titleBold="{{true}}"
+                            tags="{{item.tags}}"
+                            desc="{{item.desc}}"
+                            class="ranking">
+                        </mt-card>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--sticky" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">向下滑动内容，搜索栏跟标签页头部同时吸顶。</view>
+    </view>
+    <view class="details-main">
+        <view class="sticky">
+            <mt-sticky scrollTop="{{scrollTop}}">
+                <view id="searchBox" class="pa bgw">
+                    <mt-search bindsearch="handleSearch"></mt-search>
+                </view>
+            </mt-sticky>
+            <mt-tab miniBar sticky scrollTop="{{scrollTop}}" offsetTop="{{offsetTop}}" items="{{tabs}}">
+                <view
+                    wx:for="{{tabs}}"
+                    wx:key="index"
+                    slot="{{item.id}}">
+                    <mt-cell-group>
+                        <mt-cell
+                            wx:for="{{20}}"
+                            wx:key="index"
+                            icon="/example/images/meet.png"
+                            title="标题">
+                        </mt-cell>
+                    </mt-cell-group>
+                </view>
+            </mt-tab>
+        </view>
+    </view>
+</view>

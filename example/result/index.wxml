@@ -1,0 +1,47 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">成功页</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageSuccess">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">失败页</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageError">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">不显示图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageNullIcon">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义头部图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageCustom">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义结果页</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageCustomBtn">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+{
+    "navigationBarTitleText": "综合案例",
+    "usingComponents": {
+        "mt-field": "meet-ui-miniapp/field",
+        "mt-input": "meet-ui-miniapp/input",
+        "mt-textarea": "meet-ui-miniapp/textarea",
+        "mt-switch": "meet-ui-miniapp/switch",
+        "mt-checkbox": "meet-ui-miniapp/checkbox",
+        "mt-checkbox-group": "meet-ui-miniapp/checkbox-group",
+        "mt-radio": "meet-ui-miniapp/radio",
+        "mt-radio-group": "meet-ui-miniapp/radio-group",
+        "mt-picker": "meet-ui-miniapp/picker",
+        "mt-datepicker": "meet-ui-miniapp/datepicker",
+        "mt-imagepicker": "meet-ui-miniapp/image-picker",
+        "mt-button": "meet-ui-miniapp/button"
+    }
+}

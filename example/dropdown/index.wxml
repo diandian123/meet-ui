@@ -1,0 +1,107 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            bindclose="handleClose"
+                            title="{{case_1.title}}"
+                            items="{{case_1.items}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">二列下拉菜单</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            title="{{case_2.title}}"
+                            items="{{case_2.items}}"
+                            current="{{case_2.current}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">三列菜单</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            title="{{case_3.title}}"
+                            items="{{case_3.items}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">选择选项标题不更新</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            title="{{case_3.title}}"
+                            items="{{case_3.items}}"
+                            current="{{case_3.current}}"
+                            changeTitle="{{false}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多选下拉菜单</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            type="checkbox"
+                            title="{{case_4.title}}"
+                            items="{{case_4.items}}"
+                            current="{{case_4.current}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">动态更新菜单内容</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown
+                            title="{{case_7.title}}"
+                            items="{{case_7.items}}"
+                            current="{{case_7.current}}"
+                            bindclick="handleClick">
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义下拉内容</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown type="custom" title="{{case_5.title}}" bindclick="handleClick">
+                            <block wx:for="{{case_5.title}}" wx:key="index">
+                                <view class="custom" slot="item--{{index}}">自定义内容--{{index + 1}}</view>
+                            </block>
+                        </mt-dropdown>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">菜单联动选择</view>
+                    <view class="pannel-bd">
+                        <mt-dropdown type="relation" title="{{case_6.title}}" items="{{case_6.items}}" current="{{case_6.current}}" bindclick="handleLinkage" />
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">事件触发</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" id='showbutton' size="m" bindtap="setDropdown">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-dropdown id="dropdownDemo" maskClose items="{{case_1.items}}" bindclick="handleClick" />

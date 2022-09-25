@@ -1,0 +1,166 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">向下弹出</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <mt-popover placement="bottomLeft" items="{{popoverData}}" bindclick="handleClick">
+                                    下左
+                                </mt-popover>
+                                <mt-popover placement="bottom" items="{{popoverData}}" bindclick="handleClick">
+                                    正下
+                                </mt-popover>
+                                <mt-popover placement="bottomRight" items="{{popoverData}}" bindclick="handleClick">
+                                    下右
+                                </mt-popover>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">向上弹出</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <mt-popover placement="topLeft" items="{{popoverData}}" bindclick="handleClick">
+                                    上左
+                                </mt-popover>
+                                <mt-popover placement="top" items="{{popoverData}}" bindclick="handleClick">
+                                    正上
+                                </mt-popover>
+                                <mt-popover placement="topRight" items="{{popoverData}}" bindclick="handleClick">
+                                    上右
+                                </mt-popover>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">向右弹出</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <mt-popover placement="rightBottom" items="{{popoverData}}" bindclick="handleClick">
+                                    右下
+                                </mt-popover>
+                                <mt-popover placement="right" items="{{popoverData}}" bindclick="handleClick">
+                                    正右
+                                </mt-popover>
+                                <view>
+                                    <mt-icon name="mt-icon--unselected" color="#fff"></mt-icon>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">向左弹出</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <view>
+                                    <mt-icon name="mt-icon--unselected" color="#fff"></mt-icon>
+                                </view>
+                                <mt-popover placement="left" items="{{popoverData}}" bindclick="handleClick">
+                                    正左
+                                </mt-popover>
+                                <mt-popover placement="leftBottom" items="{{popoverData}}" bindclick="handleClick">
+                                    左下
+                                </mt-popover>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自动识别左右位置</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <mt-popover placement="autoLR" items="{{popoverData}}" bindclick="handleClick">
+                                    <mt-icon name="mt-icon--more"></mt-icon>
+                                </mt-popover>
+                                <mt-popover placement="autoLR" items="{{popoverData}}" bindclick="handleClick">
+                                    <mt-icon name="mt-icon--more"></mt-icon>
+                                </mt-popover>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自动识别上下位置</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="popover">
+                                <mt-popover placement="autoTB" items="{{popoverData}}" bindclick="handleClick">
+                                    <mt-icon name="mt-icon--more"></mt-icon>
+                                </mt-popover>
+                                <mt-popover placement="autoTB" items="{{popoverData}}" bindclick="handleClick">
+                                    <mt-icon name="mt-icon--more"></mt-icon>
+                                </mt-popover>
+                                <mt-popover placement="autoTB" items="{{popoverData}}" bindclick="handleClick">
+                                    <mt-icon name="mt-icon--more"></mt-icon>
+                                </mt-popover>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义气泡框</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <mt-cell-group lastDivider>
+                                <mt-cell
+                                    wx:for="{{list}}"
+                                    wx:key="index"
+                                    title="{{item.title}}"
+                                    desc="{{item.desc}}">
+                                    <mt-avatar
+                                        slot="left"
+                                        size="l"
+                                        src="/example/images/meet.png">
+                                    </mt-avatar>
+                                    <view slot="right">
+                                        <mt-popover maskColor="rgba(0, 0, 0, .5)" bgColor="#fff" placement="topRight">
+                                            <mt-icon name="mt-icon--more"></mt-icon>
+                                            <view slot="content" class="custom">
+                                                <mt-cell-group lastDivider>
+                                                    <mt-cell
+                                                        wx:for="{{list}}"
+                                                        wx:key="index"
+                                                        title="{{item.title}}"
+                                                        hasArrow>
+                                                    </mt-cell>
+                                                </mt-cell-group>
+                                            </view>
+                                        </mt-popover>
+                                    </view>
+                                </mt-cell>
+                            </mt-cell-group>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">事件触发</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" id='openPopover' size="m" bindtap="setPopover">演示</mt-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-popover items="{{popoverData}}" id="popoverDemo" placement="autoTB" bindclick="handleClick"></mt-popover>

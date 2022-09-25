@@ -1,0 +1,138 @@
+.home .bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #f5f6f8;
+}
+
+.home .main {
+  padding: 0 36rpx;
+  position: absolute;
+  top: 180rpx;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.home .hd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.home .logo {
+  width: 148rpx;
+  height: 148rpx;
+  background-color: #07c16c;
+  border-radius: 15% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10rpx;
+}
+
+.home .logo-img {
+  display: block;
+  width: 80rpx;
+  height: 58rpx;
+}
+
+.home .title {
+  font-size: 46rpx;
+  font-weight: bold;
+  margin: 16rpx 0 6rpx 0;
+}
+
+.home .slogo {
+  font-size: 30rpx;
+  color: #5a5a5a;
+}
+
+.home .bd {
+  padding: 50rpx 0;
+  column-count: 2;
+  column-gap: 30rpx;
+}
+
+.home .item {
+  break-inside: avoid-column;
+  height: 324rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  border-radius: 36rpx;
+  margin-bottom: 30rpx;
+}
+
+.home .item:nth-child(3n) {
+  margin-bottom: 0;
+}
+
+.home .item-shawdow {
+  padding-bottom: 36rpx;
+  position: relative;
+}
+
+.home .item-shawdow::after {
+  content: '';
+  width: 156rpx;
+  height: 100rpx;
+  background: #d6e6fd;
+  filter: blur(16rpx);
+  position: absolute;
+  bottom: 4rpx;
+  left: 8rpx;
+  z-index: 0;
+  border-radius: 60rpx;
+}
+
+.home .item-img {
+  position: relative;
+  width: 132rpx;
+  height: 132rpx;
+  display: block;
+  z-index: 2;
+}
+
+.home .item-title {
+  font-size: 34rpx;
+}
+
+.home .item-decs {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26rpx;
+  color: #989898;
+}
+
+.home .item-lightblue {
+  height: 410rpx;
+  background: #ffffff;
+}
+
+.home .item-lightblue .item-shawdow::after {
+  background: #c6f8fc;
+}
+
+.home .item-purple {
+  height: 400rpx;
+  background: #ffffff;
+}
+
+.home .item-purple .item-shawdow::after {
+  background: #cbfddd;
+}

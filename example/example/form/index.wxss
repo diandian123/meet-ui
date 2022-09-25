@@ -1,0 +1,7 @@
+.form {
+  background: #ffffff;
+}
+
+.form__button {
+  padding: 60rpx 0;
+}

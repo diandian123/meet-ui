@@ -1,0 +1,98 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">小红点</view>
+                    <view class="pannel-bd pa">
+                        <mt-badge></mt-badge>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">数字标识</view>
+                    <view class="pannel-bd pa">
+                        <mt-badge value="6" class="mr"></mt-badge>
+                        <mt-badge value="36" class="mr"></mt-badge>
+                        <mt-badge value="99" class="mr"></mt-badge>
+                        <mt-badge value="1000" class="mr"></mt-badge>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">文本标识</view>
+                    <view class="pannel-bd pa">
+                        <mt-badge value="新" class="mr"></mt-badge>
+                        <mt-badge value="New" class="mr"></mt-badge>
+                        <mt-badge value="Hot" class="mr"></mt-badge>
+                        <mt-badge value="•••" class="mr"></mt-badge>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义数值显示阈值</view>
+                    <view class="pannel-bd pa">
+                        <mt-badge value="1000" maxCount="999" class="mr"></mt-badge>
+                        <mt-badge value="10000" maxCount="9999" class="mr"></mt-badge>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">消息提醒（一）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="标题" hasArrow>
+                                <view slot="right">
+                                    <mt-badge>新消息</mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="标题" hasArrow>
+                                <view slot="right">
+                                    <mt-badge value="9"></mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="标题" hasArrow>
+                                <view slot="right">
+                                    <mt-badge value="1000"></mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell hasArrow>
+                                <view>
+                                    <mt-badge value="New">标题</mt-badge>
+                                </view>
+                                <view slot="right">
+                                    详情
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">消息提醒（二）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="avatar" clean>
+                            <mt-cell
+                                wx:for="{{case_2.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}">
+                                <mt-badge slot="left" position="top" value="{{item.badge}}">
+                                    <mt-avatar
+                                        slot="left"
+                                        radius="24"
+                                        src="{{item.image}}">
+                                    </mt-avatar>
+                                </mt-badge>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,85 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-feedback-bar
+                            placeholder="发表我的评论..."
+                            options="{{case_1}}"
+                            bindcomment="handleComment"
+                            bindlist="handleCommentList"
+                            bindapprove="handleApprove1"
+                            bindcollect="handleCollect1"
+                            bindshare="handleShare">
+                        </mt-feedback-bar>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">展示评论数</view>
+                    <view class="pannel-bd ">
+                        <mt-feedback-bar
+                            placeholder="发表我的评论..."
+                            options="{{case_2}}"
+                            bindcomment="handleComment"
+                            bindlist="handleCommentList"
+                            bindapprove="handleApprove2"
+                            bindcollect="handleCollect2"
+                            bindshare="handleShare">
+                        </mt-feedback-bar>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">展示点赞数</view>
+                    <view class="pannel-bd ">
+                        <mt-feedback-bar
+                            placeholder="发表我的评论..."
+                            options="{{case_3}}"
+                            bindcomment="handleComment"
+                            bindlist="handleCommentList"
+                            bindapprove="handleApprove2"
+                            bindcollect="handleCollect2"
+                            bindshare="handleShare">
+                        </mt-feedback-bar>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">展示收藏</view>
+                    <view class="pannel-bd ">
+                        <mt-feedback-bar
+                            placeholder="发表我的评论..."
+                            options="{{case_4}}"
+                            bindcomment="handleComment"
+                            bindcollect="handleCollect3"
+                            bindshare="handleShare">
+                        </mt-feedback-bar>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">全状态展示</view>
+                    <view class="pannel-bd ">
+                        <mt-feedback-bar
+                            placeholder="发表我的评论..."
+                            options="{{case_5}}"
+                            bindcomment="handleComment"
+                            bindcollect="handleCollect4"
+                            bindshare="handleShare">
+                        </mt-feedback-bar>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 轻提示 -->
+<mt-toast id="meetToast"></mt-toast>

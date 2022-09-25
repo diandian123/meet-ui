@@ -1,0 +1,108 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">点击切换</view>
+                    <view class="pannel-bd">
+                        <mt-tab
+                            items="{{tab_1}}"
+                            tabHeight="300">
+                            <view
+                                wx:for="{{tab_1}}"
+                                wx:key="index"
+                                slot="{{'tab-' + index}}"
+                                class="flex-center">
+                                标签内容 - {{index + 1}}
+                            </view>
+                        </mt-tab>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">滑动切换</view>
+                    <view class="pannel-bd">
+                        <mt-tab
+                            type="swiper"
+                            items="{{tab_2}}"
+                            tabHeight="300">
+                            <view
+                                wx:for="{{tab_2}}"
+                                wx:key="index"
+                                slot="{{item.id}}"
+                                class="flex-center">
+                                标签内容 - {{index + 1}}
+                            </view>
+                        </mt-tab>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义默认打开项</view>
+                    <view class="pannel-bd">
+                        <mt-tab
+                            type="swiper"
+                            items="{{tab_2}}"
+                            current="1"
+                            tabHeight="300">
+                            <view
+                                wx:for="{{tab_2}}"
+                                wx:key="index"
+                                slot="{{item.id}}"
+                                class="flex-center">
+                                标签内容 - {{index + 1}}
+                            </view>
+                        </mt-tab>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">标题项超出屏幕</view>
+                    <view class="pannel-bd">
+                        <mt-tab
+                            type="swiper"
+                            items="{{tab_3}}"
+                            tabHeight="300">
+                            <view
+                                wx:for="{{tab_3}}"
+                                wx:key="index"
+                                slot="{{item.id}}"
+                                class="flex-center">
+                                标签内容 - {{index + 1}}
+                            </view>
+                        </mt-tab>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">侧边分类导航</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="goLeftTab">示例</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">标签头吸顶</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd p60">
+                            <mt-button type="plain" size="m" bindtap="goStickyTab">示例</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">滑动标签列表</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="goSwipeList">示例</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

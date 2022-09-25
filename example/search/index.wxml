@@ -1,0 +1,47 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <mt-search bindsearch="handleSearch"></mt-search>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">点击激活搜索框</view>
+                    <view class="pannel-bd pa">
+                        <mt-search
+                            type="trigger"
+                            bindsearch="handleSearch">
+                        </mt-search>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">输入内容自动搜索</view>
+                    <view class="pannel-bd pa">
+                        <mt-search autoSearch="{{autoSearch}}"></mt-search>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义自动搜索节流时间</view>
+                    <view class="pannel-bd pa">
+                        <mt-search
+                            autoSearch="{{autoSearch}}"
+                            throttle="1000">
+                        </mt-search>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

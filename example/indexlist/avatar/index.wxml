@@ -1,0 +1,1 @@
+<mt-indexlist type="card" items="{{items}}" bindclick="handleClick"></mt-indexlist>

@@ -1,0 +1,26 @@
+<view class="details demo-sticky">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--sticky" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">向下滑动内容，在scroll-view容器中吸附内容。</view>
+    </view>
+    <view class="flex">
+        <scroll-view id="scrollView" scroll-y bindscroll="onScrollViewScroll" class="scroll-view">
+            <view class="sticky">
+                <view class="demo-placeholder">scroll-view</view>
+                <mt-sticky offsetTop="{{offsetTop}}" scrollTop="{{scrollTop}}">
+                    <view class="sticky__title">标题信息</view>
+                </mt-sticky>
+                <mt-cell-group>
+                    <mt-cell
+                        wx:for="{{20}}"
+                        wx:key="index"
+                        icon="/example/images/meet.png"
+                        title="名称">
+                    </mt-cell>
+                </mt-cell-group>
+            </view>
+        </scroll-view>
+    </view>
+</view>

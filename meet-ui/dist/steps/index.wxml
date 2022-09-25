@@ -1,0 +1,63 @@
+<view class="mt-steps mt-steps--{{direction}}"><view wx:for="{{items}}" wx:key="index" data-index="{{ index }}" class="mt-steps__item {{'mt-steps__item--' + status.getName(index+1, current)}}"><view class="mt-steps__head"><mt-icon wx:if="{{type==='icon'}}" name="{{status.getIcon(index + 1, current, doneIcon, doingIcon, todoIcon, errorIcon, item)}}" class="mt-steps__icon {{item.status === 0 ? 'mt-steps__icon--error' : ''}}" style="color:{{status.getIconColor(index + 1, current, doneColor, doingColor, todoColor)}};"></mt-icon><image wx:elif="{{type ==='image'}}" src="{{status.getIcon(index + 1, current, doneIcon, doingIcon, todoIcon, errorIcon, item)}}" class="mt-steps__image"></image><view wx:else class="mt-steps__head__number {{item.status === 0 ? 'mt-steps__head__number--error' : ''}}">{{index+1}}</view></view><view class="mt-steps__line" style="border-{{direction === 'row' ? 'top' : 'right'}}-style: {{status.getLineStyle(index + 1, current, doneLine, todoLine)}}; border-{{direction === 'row' ? 'top' : 'right'}}-color:{{status.getLineColor(index + 1, current, doneLineColor, todoLineColor)}}"></view><view class="mt-steps__content"><view wx:if="{{item.title}}" class="mt-steps__title" style="color: {{titleColor}};">{{item.title}}</view><text wx:if="{{item.desc}}" class="mt-steps__desc" style="color: {{descColor}};">{{item.desc}}</text></view></view></view>
+<wxs module="status">
+    function getName(index, current) {
+        if (index < current) {
+            //已完成
+            return 'done';
+        } else if (index === current) {
+            //进行中
+            return 'doing';
+        }
+        // 未开始
+        return 'todo';
+    };
+    function getIcon(index, current, doneIcon, doingIcon, todoIcon, errorIcon, item) {
+        //错误状态特殊处理
+        if (item.status === 0) {
+            if (index > current) {
+                return todoIcon;
+            }
+            return errorIcon
+        }
+        if (index < current) {
+            //已完成
+            return doneIcon;
+        } else if (index === current) {
+            //进行中
+            return doingIcon;
+        }
+        // 未开始
+        return todoIcon;
+    }
+    function getIconColor(index, current, doneColor, doingColor, todoColor) {
+        if (index < current) {
+            //已完成
+            return doneColor;
+        } else if (index === current) {
+            //进行中
+            return doingColor;
+        }
+        // 未开始
+        return todoColor;
+    }
+    function getLineStyle(index, current, doneLine, todoLine) {
+        if (index < current) {
+            //已完成
+            return doneLine;
+        } else {
+            //未完成
+            return todoLine;
+        }
+    }
+    function getLineColor(index, current, doneLineColor, todoLineColor) {
+        if (index < current) {
+            //已完成
+            return doneLineColor;
+        } else {
+            //未完成
+            return todoLineColor;
+        }
+    }
+
+    module.exports = { getName: getName, getIcon: getIcon, getIconColor: getIconColor, getLineStyle: getLineStyle, getLineColor: getLineColor };
+</wxs>

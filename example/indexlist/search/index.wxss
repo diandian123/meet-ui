@@ -1,0 +1,13 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.mod-search {
+    padding: 24rpx 32rpx;
+    background-color: #fff;
+}
+.mod-indexlist {
+    flex: 1;
+    position: relative;
+}

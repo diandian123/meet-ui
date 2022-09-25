@@ -1,0 +1,1 @@
+<view class="mt-collapse-group"><slot></slot></view>

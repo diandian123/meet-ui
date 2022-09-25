@@ -1,0 +1,1 @@
+.mt-loadmore{padding-bottom:env(safe-area-inset-bottom)}.mt-loadmore__divider,.mt-loadmore__loading{display:block;height:48rpx;line-height:48rpx}

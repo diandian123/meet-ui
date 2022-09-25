@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-collapse-group": "meet-ui-miniapp/collapse-group",
+        "mt-collapse": "meet-ui-miniapp/collapse"
+    }
+}

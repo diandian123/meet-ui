@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-cell": "meet-ui-miniapp/cell",
+        "mt-picker": "meet-ui-miniapp/picker",
+        "mt-field": "meet-ui-miniapp/field",
+        "mt-input": "meet-ui-miniapp/input"
+    }
+}

@@ -1,0 +1,1 @@
+<view class="mt-cells {{'mt-cells--' + type}} {{ clean ? 'mt-cells--clear' : '' }}"><view wx:if="{{title}}" class="mt-cells__title">{{title}}</view><slot></slot></view>

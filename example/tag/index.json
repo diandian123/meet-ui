@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-tag": "meet-ui-miniapp/tag",
+        "mt-toast": "meet-ui-miniapp/toast"
+    }
+}

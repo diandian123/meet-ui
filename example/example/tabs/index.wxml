@@ -1,0 +1,80 @@
+<mt-tab
+    id="swiperPage"
+    type="swiper"
+    miniBar
+    items="{{tabs}}"
+    tabHeight="{{tabHeight}}"
+    bindchange="handleChange">
+    <scroll-view
+        wx:for="{{tabs}}"
+        wx:key="index"
+        data-index="{{index}}"
+        slot="{{item.id}}"
+        scroll-y
+        scroll-top="{{scrollTop[index]}}"
+        scroll-with-animation="true"
+        refresher-enabled="{{true}}"
+        refresher-triggered="{{refreshFlag}}"
+        bindrefresherrefresh="handleRefresh"
+        bindscrolltolower="handleLoadmore"
+        bindscroll="handleScroll"
+        style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+        <view class="ptb">
+            <block wx:if="{{index === 0}}">
+                <mt-card
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    image="/example/images/poster.jpg"
+                    imageWidth="180"
+                    imageHeight="180"
+                    title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    desc="描述信息"
+                    hasDivider="{{true}}">
+                </mt-card>
+            </block>
+            <block wx:elif="{{index === 1}}">
+                <mt-card
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    type="video"
+                    image="/example/images/poster.jpg"
+                    subscript="12:50"
+                    imagePosition="top"
+                    imageHeight="340"
+                    title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    desc="描述信息"
+                    class="db mb24">
+                </mt-card>
+            </block>
+            <block wx:elif="{{index === 2}}">
+                <mt-card
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    image="/example/images/poster.jpg"
+                    imagePosition="right"
+                    imageWidth="220"
+                    imageHeight="180"
+                    title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    desc="描述信息"
+                    hasDivider="{{true}}">
+                </mt-card>
+            </block>
+            <block wx:else>
+                <mt-card
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    type="video"
+                    image="/example/images/poster.jpg"
+                    subscript="12:50"
+                    imagePosition="bottom"
+                    imageHeight="340"
+                    title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    desc="描述信息"
+                    class="db mb24">
+                </mt-card>
+            </block>
+            <mt-loadmore hasMore="{{hasMore}}"></mt-loadmore>
+        </view>
+    </scroll-view>
+</mt-tab>
+<mt-backtop scene="scroll-view"></mt-backtop>

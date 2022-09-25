@@ -1,0 +1,48 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">横向加载提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="loadingToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">纵向加载提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnLoadingToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义加载图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnLoadingIconToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">页面加载（一）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toFullPage">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">页面加载（二）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toLaunchPage">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

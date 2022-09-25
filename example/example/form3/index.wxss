@@ -1,0 +1,28 @@
+.details {
+  background-image: linear-gradient(0, #01d5d8, #47d998);
+}
+
+.header {
+  padding: 60rpx;
+  font-size: 48rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  padding: 0 36rpx;
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 26rpx 0 0;
+}
+
+.form .mt-field__label {
+  font-size: 30rpx;
+}
+
+.form__button {
+  padding: 60rpx 0;
+}

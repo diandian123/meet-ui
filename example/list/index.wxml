@@ -1,0 +1,232 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_1.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_1.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                url="{{item.url}}"
+                                hasArrow="{{true}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_2.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_2.list}}"
+                                wx:key="index"
+                                icon="{{item.icon}}"
+                                title="{{item.title}}"
+                                url="{{item.url}}"
+                                hasArrow="{{true}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_3.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_3.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                url="{{item.url}}"
+                                hasArrow="{{true}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_4.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_4.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                url="{{item.url}}"
+                                extDesc="{{item.extDesc}}"
+                                hasArrow="{{true}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <!-- <view class="pannel">
+                    <view class="pannel-hd">点击跳转</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group >
+                            <mt-cell
+                                wx:for="{{group.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                rightDesc="{{item.rightDesc}}"
+                                url="{{item.url}}"
+                                hasArrow="{{item.hasArrow || false}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view> -->
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_8.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_8.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow="{{false}}">
+                                <mt-avatar
+                                    slot="right"
+                                    size="m"
+                                    src="/example/images/avatar.png">
+                                </mt-avatar>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_5.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell
+                                wx:for="{{case_5.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow="{{false}}">
+                                <mt-switch
+                                    slot="right"
+                                    bindchange="handleSwitch">
+                                </mt-switch>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_6.name}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="avatar">
+                            <mt-cell
+                                wx:for="{{case_6.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow="{{true}}">
+                                <mt-avatar
+                                    slot="left"
+                                    size="l"
+                                    src="{{item.avatar}}">
+                                </mt-avatar>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">消息提醒（一）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group>
+                            <mt-cell title="标题" hasArrow="{{true}}">
+                                <view slot="right">
+                                    <mt-badge>新消息</mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="标题" hasArrow="{{true}}">
+                                <view slot="right">
+                                    <mt-badge value="9"></mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="标题" hasArrow="{{true}}">
+                                <view slot="right">
+                                    <mt-badge value="1000"></mt-badge>
+                                </view>
+                            </mt-cell>
+                            <mt-cell hasArrow="{{true}}">
+                                <view>
+                                    <mt-badge value="New">标题</mt-badge>
+                                </view>
+                                <view slot="right">
+                                    详情
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_7.name}}（二）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="avatar">
+                            <mt-cell
+                                wx:for="{{case_7.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow="{{true}}">
+                                <mt-badge slot="left" position="top" value="{{item.badge}}">
+                                    <mt-avatar
+                                        size="l"
+                                        radius="16"
+                                        src="{{item.avatar}}">
+                                    </mt-avatar>
+                                </mt-badge>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">卡片列表（一）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="card">
+                            <mt-cell
+                                wx:for="{{case_9.list}}"
+                                wx:key="index"
+                                radius="16"
+                                title="{{item.title}}"
+                                hasArrow="{{item.hasArrow}}">
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">卡片列表（二）</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="card">
+                            <mt-cell
+                                wx:for="{{case_10.list}}"
+                                wx:key="index"
+                                radius="16"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow="{{item.hasArrow}}">
+                                <mt-avatar
+                                    slot="left"
+                                    size="l"
+                                    src="{{item.avatar}}">
+                                </mt-avatar>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

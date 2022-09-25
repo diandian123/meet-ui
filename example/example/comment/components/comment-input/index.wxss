@@ -1,0 +1,17 @@
+.input-popup {
+  padding: 0 30rpx 30rpx;
+}
+
+.input-popup__ft {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.input-popup__ft .mt-btn {
+  padding: 0;
+  font-size: 26rpx;
+}

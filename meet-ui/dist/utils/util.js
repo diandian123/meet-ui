@@ -1,0 +1,1 @@
+function rpx2px(x){return x/750*wx.getSystemInfoSync().screenWidth}function px2rpx(x){return 750*x/wx.getSystemInfoSync().screenWidth}export default{rpx2px:rpx2px,px2rpx:px2rpx};

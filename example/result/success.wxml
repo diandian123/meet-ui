@@ -1,0 +1,5 @@
+<mt-result
+    type="success"
+    title="操作成功"
+    desc="描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息"
+    bindclick="handleClick"></mt-result>

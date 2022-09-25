@@ -1,0 +1,20 @@
+.category .category-header {
+  margin-bottom: 24rpx;
+}
+
+.category .category-header .mt-cell {
+  padding: 48rpx 36rpx;
+}
+
+.category .category-header .mt-cell__ct-title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.category .category-main {
+  padding: 0 0 60rpx;
+}
+
+.category .category-main .mt-cell {
+  padding: 30rpx 36rpx;
+}

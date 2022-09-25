@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mt-swiper": "meet-ui-miniapp/swiper",
+        "mt-navbar": "meet-ui-miniapp/navbar"
+    }
+}

@@ -1,0 +1,38 @@
+/* 
+* meet-ui组件全局默认设置
+*/
+mt-navbar,
+mt-field,
+mt-card,
+mt-album {
+    display: block;
+}
+/* 
+font-size: 0; 用于处理组件内部元素间留白；
+vertical-align: top; 用于处理图片与空标签inline-block状态下出现的底部留白 
+*/
+mt-icon,
+mt-avatar,
+mt-tag,
+mt-switch,
+mt-switch-bar {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+mt-badge {
+    display: inline-block;
+    vertical-align: top;
+}
+/* 清除cells底部分隔线 */
+.mt-cells--list.mt-cells--clear mt-cell:last-child .mt-cell::after {
+    display: none;
+}
+/* 清除cells底部外边距 */
+.mt-cells--card.mt-cells--clear mt-cell:last-child .mt-cell {
+    margin-bottom: 0;
+}
+/* 清除card底部分隔线 */
+mt-card:last-child .mt-card--divider::after {
+    display: none;
+}

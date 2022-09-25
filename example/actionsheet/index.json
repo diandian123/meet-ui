@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "mt-button": "meet-ui-miniapp/button",
+        "mt-actionSheet": "meet-ui-miniapp/actionsheet",
+        "mt-toast": "meet-ui-miniapp/toast"
+    }
+}

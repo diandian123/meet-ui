@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-sticky": "meet-ui-miniapp/sticky"
+    }
+}

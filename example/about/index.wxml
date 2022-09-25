@@ -1,0 +1,96 @@
+<view class="about">
+    <view class="header">
+        <image class="banner" src="../images/meet.jpg" mode="aspectFill"></image>
+        <view class="slogo">
+            <view class="title">MEET UI, MEET YOU!</view>
+            <view class="subtitle">重新定义用户界面、用户交互、用户体验</view>
+        </view>
+    </view>
+    <view class="main">
+        <view class="help">
+            <mt-cell-group type="card">
+                <mt-cell
+                    radius="16"
+                    title="关于MEET UI"
+                    desc="一套简约、清新、高可用小程序组件库"
+                    bindtap="handleMeetYou">
+                    <mt-avatar
+                        slot="left"
+                        size="l"
+                        src="/example/images/a.png"></mt-avatar>
+                </mt-cell>
+                <mt-cell
+                    radius="16"
+                    title="Github"
+                    desc="点击复制地址，在浏览器中打开"
+                    bindtap="copyGithubLink">
+                    <mt-avatar
+                        slot="left"
+                        size="l"
+                        src="/example/images/b.png"></mt-avatar>
+                </mt-cell>
+                <mt-cell
+                    radius="16"
+                    title="使用说明"
+                    desc="点击复制地址，在浏览器中打开"
+                    bindtap="copyDocsLink">
+                    <mt-avatar
+                        slot="left"
+                        size="l"
+                        src="/example/images/c.png"></mt-avatar>
+                </mt-cell>
+                <button open-type="feedback" bindcontact="handleContact" class="nav-contact">
+                    <mt-cell
+                        radius="16"
+                        title="意见反馈"
+                        desc="使用过程遇到任何问题或建议">
+                        <mt-avatar
+                            slot="left"
+                            size="l"
+                            src="/example/about/images/feedback.png"></mt-avatar>
+                    </mt-cell>
+                </button>
+                <button open-type="contact" bindcontact="handleContact" class="nav-contact">
+                    <mt-cell
+                        radius="16"
+                        title="开发交流"
+                        desc="如果你其他好的想法欢迎一起交流">
+                        <mt-avatar
+                            slot="left"
+                            size="l"
+                            src="/example/about/images/chat.png"></mt-avatar>
+                    </mt-cell>
+                </button>
+            </mt-cell-group>
+        </view>
+        <view class="group">
+            <image src="/example/images/qrcode.jpg" class="group-image" bindtap="previewImage"></image>
+            <text>Meet UI交流群</text>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>
+<!-- 底部弹层（支持手势关闭） -->
+<mt-popup
+    visible="{{popupStatus}}"
+    hasGesture
+    bindclose="hidePopup"
+    class="popup__about">
+    <view class="mod__dialog">
+        <image mode="aspectFill" src="/example/images/poster.jpg" class="mod__dialog__img"></image>
+        <view class="feature">
+            <view class="pa">
+                <view class="item">- 🍭 注重体验，重新定义组件40+，覆盖多种应用场景，严格控制代码包体积；</view>
+                <view class="item">- 🍭 使用小程序原生语言编写，rpx适配，支持官方最新特性；</view>
+                <view class="item">- 🍭 细分组件颗粒，加强组件间复用，自由组合，方便业务二次扩展；</view>
+                <view class="item">- 🍭 关注页面载入生命周期（init 加载 || normal 正常状态 || empty 空状态 || error 错误状态），规范页面模板，组件层面确保页面稳定性；</view>
+                <view class="item">- 🍭 抽象Popup能力，统一弹层动画、手势操作，支持各类弹层场景组件扩展（Actionsheet、Picker、Drawer、Dropdown、Popover...）；</view>
+                <view class="item">- 🍭 优化Dialog、Toast、Loading组件使用方式，支持全局函数调用，维持单例特性，减少资源开销；</view>
+                <view class="item">- 🍭 丰富Picker选择器能力，支持二级联动、三级联动、多picker间数据级联，支持日期、地区等任意特性数据渲染；</view>
+                <view class="item">- 🍭 加强imagePicker图片选择能力，支持选图拖动排序；</view>
+                <view class="item">- 🍭 重视用户输入体验，多种样式满足各类表单场景需求；</view>
+                <view class="item">- 🍭 坚持实用性，场景化演示，开箱即用；</view>
+            </view>
+        </view>
+    </view>
+</mt-popup>

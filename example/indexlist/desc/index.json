@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-indexlist": "meet-ui-miniapp/index-list"
+    }
+}

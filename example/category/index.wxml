@@ -1,0 +1,28 @@
+<view class="category">
+    <view class="category-header">
+        <mt-cell title="{{category.title}}">
+            <mt-badge slot="right" position="center" value="{{category.items.length}}"></mt-badge>
+        </mt-cell>
+    </view>
+    <view class="category-main">
+        <mt-cell-group type="card" rowGap="36">
+            <mt-cell
+                wx:for="{{category.items}}"
+                wx:key="index"
+                title="{{item.title}}"
+                url="{{item.url + '?icon=' + item.icon + '&title=' + item.title}}"
+                radius="16"
+                hasArrow="true">
+                <mt-icon
+                    slot="left"
+                    type="custom"
+                    name="{{item.icon}}"
+                    size="64"
+                    class="component-icon">
+                </mt-icon>
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</view>
+<!-- 对话框组件 -->
+<mt-dialog id="meetDialog"></mt-dialog>

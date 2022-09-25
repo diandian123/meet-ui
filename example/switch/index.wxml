@@ -1,0 +1,154 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean class="demo-cell__group">
+                            <mt-cell title="{{switch1.checked ? '已启用' : '未启用'}}">
+                                <view slot="right">
+                                    <mt-switch
+                                        checked="{{switch1.checked}}"
+                                        bindchange="handleSwitch1">
+                                    </mt-switch>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="{{switch2.checked ? '已启用' : '未启用'}}">
+                                <view slot="right">
+                                    <mt-switch
+                                        checked="{{switch2.checked}}"
+                                        bindchange="handleSwitch2">
+                                    </mt-switch>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="未开启禁用">
+                                <view slot="right">
+                                    <mt-switch
+                                        checked="{{switch3.checked}}"
+                                        disabled="{{switch3.disabled}}">
+                                    </mt-switch>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="已开启禁用">
+                                <view slot="right">
+                                    <mt-switch
+                                        checked="{{switch4.checked}}"
+                                        disabled="{{switch4.disabled}}">
+                                    </mt-switch>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">开关颜色</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean class="demo-cell__group">
+                            <mt-cell title="红色">
+                                <view slot="right">
+                                    <mt-switch checked checkedColor="#fa5151"></mt-switch>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="黄色">
+                                <view slot="right">
+                                    <mt-switch checked checkedColor="#fec51d"></mt-switch>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="蓝色">
+                                <view slot="right">
+                                    <mt-switch checked checkedColor="#4876ff"></mt-switch>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">异步开关</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="{{switch5.checked ? '已启用' : '未启用'}}">
+                                <view slot="right">
+                                    <mt-switch
+                                        async
+                                        checked="{{switch5.checked}}"
+                                        bindchange="handleAsyncSwitch">
+                                    </mt-switch>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">开关列表</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell
+                                wx:for="{{case_1.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                extDesc="{{item.extDesc}}">
+                                <mt-switch
+                                    slot="right"
+                                    checked="{{item.checked}}"
+                                    bindchange="handleSwitch"
+                                    data-index="{{index}}">
+                                </mt-switch>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            required
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="switch"
+                            label="字段名称"
+                            position="right"
+                            hasDivider>
+                            <mt-switch
+                                checked="{{switch6.checked}}"
+                                bindchange="handleSwitch6">
+                            </mt-switch>
+                        </mt-field>
+                        <mt-field
+                            type="switch"
+                            label="字段名称"
+                            position="right"
+                            required>
+                            <mt-switch
+                                checked="{{switch7.checked}}"
+                                bindchange="handleSwitch7">
+                            </mt-switch>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

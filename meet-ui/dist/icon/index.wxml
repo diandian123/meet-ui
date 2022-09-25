@@ -1,0 +1,1 @@
+<image wx:if="{{src}}" mode="aspectFill" src="{{src}}" class="mt-icon {{'mt-icon--' + type}}" style="{{size ? 'width: ' + size + 'rpx; height:' + size + 'rpx;' : ''}}"></image><text wx:else class="mt-icon mt-icon--text {{'mt-icon--' + type}} {{name}}" style="{{color ? 'color: ' + color + ';' : ''}} {{size ? 'font-size: ' + size + 'rpx;' : ''}}"></text>

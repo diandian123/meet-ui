@@ -1,0 +1,36 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">主要用于各类图标显示，支持iconfont字体图标、图片图标、大小、颜色等配置。</view>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">基本用法</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd"></view>
+                    <view class="pannel-bd">
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">应用示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd"></view>
+                    <view class="pannel-bd">
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

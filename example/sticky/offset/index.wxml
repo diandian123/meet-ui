@@ -1,0 +1,24 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--sticky" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">向下滑动页面，吸顶标题栏，距离顶部100rpx。</view>
+    </view>
+    <view>
+        <view class="sticky">
+            <view class="demo-placeholder">占位区域</view>
+            <mt-sticky offsetTop="100" scrollTop="{{scrollTop}}">
+                <view class="sticky__title">标题栏</view>
+            </mt-sticky>
+            <mt-cell-group>
+                <mt-cell
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    icon="/example/images/meet.png"
+                    title="名称">
+                </mt-cell>
+            </mt-cell-group>
+        </view>
+    </view>
+</view>

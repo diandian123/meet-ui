@@ -1,0 +1,54 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view style="color: #fa5151;  font-size: 30rpx;">由于地区数据包相对较大，本示例仅列举少量地区做演示，实际使用请根据例子数据格式完善数据即可。</view>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择地区" position="right" hasDivider="{{true}}">
+                            <mt-picker
+                                items="{{areaData}}"
+                                bindconfirm="handleConfirm">
+                            </mt-picker>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">默认选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择地区" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{areaData}}"
+                                selectedIndex="{{[0,1,0]}}"
+                                bindconfirm="handleConfirm">
+                            </mt-picker>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">点击按钮触发</view>
+                    <view class="pannel-bd pa">
+                        <mt-button type="plain" size="m" bindtap="showAreaPicker">选择地区</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-picker
+    id="areaPicker"
+    trigger="button"
+    items="{{areaData}}"
+    bindconfirm="handleConfirm" />
+<mt-toast id="meetToast"></mt-toast>
+<mt-dialog id="meetDialog"></mt-dialog>

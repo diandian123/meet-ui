@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "mt-avatar": "meet-ui-miniapp/avatar",
+        "mt-cell": "meet-ui-miniapp/cell",
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-grid": "meet-ui-miniapp/grid",
+        "mt-badge": "meet-ui-miniapp/badge"
+    }
+}

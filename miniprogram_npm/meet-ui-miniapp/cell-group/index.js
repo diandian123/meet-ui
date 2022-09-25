@@ -1,0 +1,1 @@
+Component({options:{multipleSlots:!0,styleIsolation:"shared"},properties:{type:{type:String,value:"list"},title:{type:String,value:""},clean:{type:Boolean,value:!0}},relations:{"../cell":{type:"descendant"}}});

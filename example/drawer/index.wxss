@@ -1,0 +1,10 @@
+.comment-popup__bd {
+    height: 75vh;
+}
+.containt {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blanchedalmond;
+}

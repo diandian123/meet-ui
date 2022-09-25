@@ -1,0 +1,24 @@
+<view class="mt-empty {{height > 0 ? 'mt-empty--local' : 'mt-empty--page'}}"
+    style="background-color: {{bgColor}}; {{height > 0 ? 'height: ' + height + 'rpx': ''}}">
+    <!-- 自定义空状态 -->
+    <block wx:if="{{type === 'custom'}}">
+        <slot></slot>
+    </block>
+    <!-- 默认空状态显示 -->
+    <block wx:else>
+        <!-- 图片 -->
+        <image src="{{icon || './images/default.png'}}" class="mt-empty__icon"></image>
+        <!-- 文案描述 -->
+        <view class="mt-empty__text">
+            {{text || '暂无数据~'}}
+        </view>
+        <!-- 按钮 -->
+        <mt-button
+            wx:if="{{hasBtn}}"
+            bindtap="handleButton"
+            type="plain"
+            size="s"
+            class="mt-empty__btn">{{btnText}}
+        </mt-button>
+    </block>
+</view>

@@ -1,0 +1,96 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="form">
+            <mt-field type="input" label="字段名称" required hasDivider>
+                <mt-input
+                    bdColor="null"
+                    value="{{input1}}"
+                    bindinput="handleInput1">
+                </mt-input>
+            </mt-field>
+            <mt-field type="input" label="字段名称" hasDivider>
+                <mt-input
+                    bdColor="null"
+                    value="{{input2}}"
+                    bindinput="handleInput2">
+                </mt-input>
+            </mt-field>
+            <mt-field type="input" label="字段名称" error="出错提醒出错提醒" hasDivider>
+                <mt-input
+                    bdColor="null"
+                    value="{{input3}}"
+                    bindinput="handleInput3">
+                </mt-input>
+            </mt-field>
+            <mt-field type="radio" label="字段名称" required hasDivider>
+                <mt-radio-group
+                    direction="row"
+                    items="{{radioList}}"
+                    bindchange="handleRadio">
+                </mt-radio-group>
+            </mt-field>
+            <mt-field type="checkbox" label="字段名称" hasDivider>
+                <mt-checkbox-group
+                    direction="row"
+                    items="{{checkboxList}}"
+                    bindchange="handleCheckbox">
+                </mt-checkbox-group>
+            </mt-field>
+            <mt-field type="switch" label="字段名称" hasDivider>
+                <mt-switch
+                    checked="{{switchStatus}}"
+                    bindchange="handleSwitch">
+                </mt-switch>
+            </mt-field>
+            <mt-field type="picker" label="字段名称" hasDivider required>
+                <mt-picker
+                    title="标题信息"
+                    placeholder="请选择"
+                    items="{{pickerItems}}"
+                    bindconfirm="handlePicker">
+                </mt-picker>
+            </mt-field>
+            <mt-field type="picker" label="字段名称" hasDivider>
+                <mt-datepicker
+                    type="date"
+                    placeholder="请选择生日"
+                    bindconfirm="handleDate">
+                </mt-datepicker>
+            </mt-field>
+            <mt-field type="link" label="字段名称" hasDivider bindtap="handleLink">
+                <view style="color: #cccccc">未设置</view>
+            </mt-field>
+            <mt-field
+                type="textarea"
+                label="字段名称"
+                hasDivider>
+                <mt-textarea
+                    bdColor="null"
+                    value=""
+                    hasCount
+                    maxLength="300"
+                    autoHeight
+                    bindinput="handleTextarea">
+                </mt-textarea>
+            </mt-field>
+            <mt-field
+                type="image-picker"
+                direction="column"
+                label="字段名称"
+                required>
+                <mt-imagepicker
+                    items="{{imageList}}"
+                    bindchange="handleImagePicker">
+                </mt-imagepicker>
+            </mt-field>
+            <view class="form__button">
+                <mt-button bindtap="submit" size="l">提交</mt-button>
+            </view>
+        </view>
+    </view>
+</view>

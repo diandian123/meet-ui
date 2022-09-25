@@ -1,0 +1,139 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">左抽屉</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleDrawer1">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">右抽屉</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleDrawer2">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">左抽屉（支持手势关闭、内容滚动）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleDrawer3">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">右抽屉（支持手势关闭、内容滚动）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleDrawer4">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 左侧弹层 -->
+<mt-popup
+    type="drawer"
+    position="left"
+    visible="{{drawer1Status}}"
+    bindclose="toggleDrawer1">
+    <view>
+        <view class="demo-placeholder">占位区域</view>
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</mt-popup>
+<!-- 右侧弹层 -->
+<mt-popup
+    type="drawer"
+    position="right"
+    visible="{{drawer2Status}}"
+    bindclose="toggleDrawer2">
+    <view>
+        <view class="demo-placeholder">占位区域</view>
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</mt-popup>
+<!-- 左侧弹层 -->
+<mt-popup
+    type="drawer"
+    position="left"
+    hasGesture
+    visible="{{drawer3Status}}"
+    bindclose="toggleDrawer3">
+    <view>
+        <view class="demo-placeholder">占位区域</view>
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</mt-popup>
+<!-- 右侧弹层 -->
+<mt-popup
+    type="drawer"
+    position="right"
+    hasGesture
+    visible="{{drawer4Status}}"
+    bindclose="toggleDrawer4">
+    <view>
+        <view class="demo-placeholder">占位区域</view>
+        <mt-cell-group>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+            <mt-cell
+                wx:for="{{case_1.list}}"
+                wx:key="index"
+                icon="{{item.icon}}"
+                title="{{item.title}}"
+                url="{{item.url}}"
+                hasArrow="{{true}}">
+            </mt-cell>
+        </mt-cell-group>
+    </view>
+</mt-popup>

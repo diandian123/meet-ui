@@ -1,0 +1,1 @@
+Component({options:{addGlobalClass:!0},properties:{type:{type:String,value:"solid"},lineColor:{type:String,value:""},textColor:{type:String,value:""},textSize:{type:String,value:""},rowGap:{type:Number,value:36},columnGap:{type:Number,value:60}}});

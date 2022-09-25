@@ -1,0 +1,11 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--sticky" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">向下滑动页面，表格头部吸顶</view>
+    </view>
+    <view>
+        <table-view headers="{{tableHeader}}" data="{{tableRows}}" sticky scrollTop="{{scrollTop}}" />
+    </view>
+</view>

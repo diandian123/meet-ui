@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "mt-datepicker": "meet-ui-miniapp/datepicker",
+        "mt-field": "meet-ui-miniapp/field",
+        "mt-input": "meet-ui-miniapp/input"
+    }
+}

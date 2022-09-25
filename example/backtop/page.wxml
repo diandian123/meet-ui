@@ -1,0 +1,28 @@
+<view class="details safe">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--top" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">滚动页面，显示返回顶部按钮</view>
+    </view>
+    <view class="details-main">
+        <view class="section pb30">
+            <mt-cell-group>
+                <mt-cell
+                    wx:for="{{50}}"
+                    wx:key="index"
+                    title="标题"
+                    desc="描述信息"
+                    hasArrow>
+                    <mt-avatar
+                        slot="left"
+                        radius="16"
+                        src="/example/images/meet.png">
+                    </mt-avatar>
+                </mt-cell>
+            </mt-cell-group>
+        </view>
+    </view>
+</view>
+<!-- backtop组件 -->
+<mt-backtop id="backtop"></mt-backtop>

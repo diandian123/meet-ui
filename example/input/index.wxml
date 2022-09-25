@@ -1,0 +1,200 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <mt-input
+                            value="{{input1.value}}"
+                            placeholder="请输入内容..."
+                            bindinput="handleInput1">
+                        </mt-input>
+                        <view wx:if="{{input1.value}}" class="input__value">value：{{input1.value}}</view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">密码输入框</view>
+                    <view class="pannel-bd pa">
+                        <mt-input
+                            type="password"
+                            value="{{input2.value}}"
+                            placeholder="请输入密码..."
+                            eye="true"
+                            bindinput="handleInput2">
+                        </mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">数字键盘</view>
+                    <view class="pannel-bd pa">
+                        <mt-input
+                            type="number"
+                            value="{{input3.value}}"
+                            placeholder="请输入数字..."
+                            bindinput="handleInput3">
+                        </mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">身份证键盘</view>
+                    <view class="pannel-bd pa">
+                        <mt-input type="idcard"></mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">验证码输入框</view>
+                    <view class="pannel-bd pa">
+                        <mt-input
+                            type="code"
+                            maxLength="6"
+                            enableCode="{{true}}"
+                            placeholder="请输入验证码..."></mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">只读状态</view>
+                    <view class="pannel-bd pa">
+                        <mt-input value="{{input5.value}}" readonly></mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">禁用状态</view>
+                    <view class="pannel-bd pa">
+                        <mt-input value="{{input6.value}}" disabled></mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">限制最大输入字符数</view>
+                    <view class="pannel-bd pa">
+                        <mt-input
+                            value="{{input4.value}}"
+                            placeholder="最多输入10个字符..."
+                            maxLength="10">
+                        </mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">带图标输入框</view>
+                    <view class="pannel-bd pa">
+                        <mt-input icon="/example/images/about_b.png" placeholder="请输入内容...">
+                        </mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义输入框样式</view>
+                    <view class="pannel-bd pa">
+                        <mt-input bdColor="transparent" bgColor="#F5F6F8" placeholder="请输入内容...">
+                        </mt-input>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（一）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            required
+                            hasDivider
+                            error="出错提醒出错提醒">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" value="MEET UI, MEET YOU!"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="textarea"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-textarea
+                                bdColor="null"
+                                value="做对产品、业务真正有帮助的“实用”技术研发！"
+                                hasCount
+                                maxLength="300"
+                                autoHeight>
+                            </mt-textarea>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（二）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            required
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right"
+                            error="出错提醒出错提醒">
+                            <mt-input bdColor="null"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasClear="{{false}}"
+                            hasDivider
+                            position="right">
+                            <mt-input bdColor="null" value="MEET UI, MEET YOU!"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="textarea"
+                            label="字段名称"
+                            required
+                            position="right">
+                            <mt-textarea
+                                bdColor="null"
+                                value="做对产品、业务真正有帮助的“实用”技术研发！"
+                                hasCount
+                                maxLength="300"
+                                autoHeight>
+                            </mt-textarea>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

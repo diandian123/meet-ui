@@ -1,3 +1,5 @@
 node_modules
 meet-ui/node_modules
+package-lock.json
 .DS_Store
+

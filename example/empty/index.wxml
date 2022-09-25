@@ -1,0 +1,45 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-empty height="500"></mt-empty>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义图标与文本</view>
+                    <view class="pannel-bd">
+                        <mt-empty
+                            height="500"
+                            icon="/example/empty/images/search.png"
+                            text="没有找到对应的内容~">
+                        </mt-empty>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">页面内容为空</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageEmpty">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">搜素结果为空</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toPageEmptySearch">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

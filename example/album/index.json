@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-album": "meet-ui-miniapp/album"
+    }
+}

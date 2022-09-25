@@ -1,0 +1,128 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">单图显示（横图）</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_1}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{false}}"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">单图显示（竖图）</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_2}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{false}}"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多图显示</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_3}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{false}}"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示话题标签</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_1}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{true}}"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义图片最大显示数</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_4}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{true}}"
+                            imageMaxCount="3"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">内容超出显示全文</view>
+                    <view class="pannel-bd">
+                        <mt-feed
+                            wx:for="{{case_5}}"
+                            wx:key="index"
+                            data-index="{{index}}"
+                            options="{{item}}"
+                            hasMore="{{true}}"
+                            hasTopic="{{true}}"
+                            bind:user="handleUser"
+                            bind:more="handleMore"
+                            bind:detail="handleDetail"
+                            bind:comment="handleComment"
+                            bind:approve="handleApprove">
+                        </mt-feed>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 公共提示 -->
+<mt-toast id="meetToast"></mt-toast>

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "侧边分类导航（示例）",
+    "usingComponents": {
+        "mt-tab": "meet-ui-miniapp/tab",
+        "mt-card": "meet-ui-miniapp/card"
+    }
+}

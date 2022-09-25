@@ -1,0 +1,1 @@
+<view class="mt-sticky" style="{{ containerStyle }}"><view class="mt-sticky__bd" style="{{contentStyle}}"><slot/></view></view>

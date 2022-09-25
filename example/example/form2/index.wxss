@@ -1,0 +1,24 @@
+.details {
+  background: #f5f6f8;
+}
+
+.header {
+  padding: 60rpx;
+  font-size: 48rpx;
+  text-align: center;
+  color: #333;
+}
+
+.main {
+  padding: 0 36rpx;
+}
+
+.form {
+  background: #ffffff;
+  border-radius: 16rpx;
+  box-shadow: 0 0 20rpx #e9e9e9;
+}
+
+.form__button {
+  padding: 60rpx 0;
+}

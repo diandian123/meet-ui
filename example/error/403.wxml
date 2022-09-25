@@ -1,0 +1,4 @@
+<mt-error
+    type="403"
+    icon="/example/error/images/403.png"
+    btnEvent="goBack"></mt-error>

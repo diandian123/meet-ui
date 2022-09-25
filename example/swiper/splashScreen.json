@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mt-swiper": "meet-ui-miniapp/swiper",
+        "mt-checkbox": "meet-ui-miniapp/checkbox",
+        "mt-buttom": "meet-ui-miniapp/button",
+        "mt-toast": "meet-ui-miniapp/toast",
+        "mt-navbar": "meet-ui-miniapp/navbar"
+    }
+}

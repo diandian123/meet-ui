@@ -1,0 +1,153 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <view class="demo-grid">
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--wx"></mt-icon>
+                                <text class="demo-grid__text">微信</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--qq"></mt-icon>
+                                <text class="demo-grid__text">QQ</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--comment"></mt-icon>
+                                <text class="demo-grid__text">评论</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--approve"></mt-icon>
+                                <text class="demo-grid__text">点赞</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义颜色</view>
+                    <view class="pannel-bd">
+                        <view class="demo-grid">
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--wx" color="#07c16c"></mt-icon>
+                                <text class="demo-grid__text">#07c16c</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--wx" color="#ea4545"></mt-icon>
+                                <text class="demo-grid__text">#ea4545</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--wx" color="#fec51d"></mt-icon>
+                                <text class="demo-grid__text">#fec51d</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon name="mt-icon--wx" color="#4876FF"></mt-icon>
+                                <text class="demo-grid__text">#4876FF</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义大小</view>
+                    <view class="pannel-bd">
+                        <view class="pannel-bd">
+                            <view class="demo-grid">
+                                <view class="demo-grid__item">
+                                    <mt-icon name="mt-icon--wx" size="32"></mt-icon>
+                                    <text class="demo-grid__text">size=32</text>
+                                </view>
+                                <view class="demo-grid__item">
+                                    <mt-icon name="mt-icon--wx" size="48"></mt-icon>
+                                    <text class="demo-grid__text">size=48</text>
+                                </view>
+                                <view class="demo-grid__item">
+                                    <mt-icon name="mt-icon--wx" size="64"></mt-icon>
+                                    <text class="demo-grid__text">size=64</text>
+                                </view>
+                                <view class="demo-grid__item">
+                                    <mt-icon name="mt-icon--wx" size="80"></mt-icon>
+                                    <text class="demo-grid__text">size=80</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义图标地址</view>
+                    <view class="pannel-bd">
+                        <view class="demo-grid">
+                            <view class="demo-grid__item">
+                                <mt-icon src="/example/images/about_a.png"></mt-icon>
+                                <text class="demo-grid__text">Meet</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon src="/example/images/about_b.png"></mt-icon>
+                                <text class="demo-grid__text">Meet</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon src="/example/images/about_a.png"></mt-icon>
+                                <text class="demo-grid__text">Meet</text>
+                            </view>
+                            <view class="demo-grid__item">
+                                <mt-icon src="/example/images/about_b.png"></mt-icon>
+                                <text class="demo-grid__text">Meet</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{group_1.title}}</view>
+                    <view class="pannel-bd">
+                        <!-- 抽象属性 -->
+                        <mt-grid
+                            type="scope"
+                            bdType="none"
+                            column="4"
+                            items="{{group_1.items}}"
+                            generic:grid-item="grid-item"
+                            class="demo-grid__scope">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{group_2.title}}</view>
+                    <view class="pannel-bd">
+                        <!-- 抽象属性 -->
+                        <mt-grid
+                            type="scope"
+                            bdType="none"
+                            column="4"
+                            items="{{group_2.items}}"
+                            generic:grid-item="grid-item"
+                            class="demo-grid__scope">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{group_3.title}}</view>
+                    <view class="pannel-bd">
+                        <!-- 抽象属性 -->
+                        <mt-grid
+                            type="scope"
+                            bdType="none"
+                            column="4"
+                            items="{{group_3.items}}"
+                            generic:grid-item="grid-item"
+                            class="demo-grid__scope">
+                        </mt-grid>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-comment": "meet-ui-miniapp/comment"
+    }
+}

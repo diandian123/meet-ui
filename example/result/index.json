@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-result": "meet-ui-miniapp/result",
+        "mt-button": "meet-ui-miniapp/button"
+    }
+}

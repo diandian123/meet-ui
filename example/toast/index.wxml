@@ -1,0 +1,102 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">文本提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="normalToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">成功提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="successToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">失败提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="failToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">警告提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="warningToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义提示图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="iconToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">长文本提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="longTextToast">演示</mt-button>
+                    </view>
+                </view>
+                <!-- <view class="pannel">
+                    <view class="pannel-hd">自定义时长</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="timeToast">演示</mt-button>
+                    </view>
+                </view> -->
+                <view class="pannel">
+                    <view class="pannel-hd">横向加载提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="loadingToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">纵向加载提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnLoadingToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义加载图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnLoadingIconToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">纵向成功提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnSuccessToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">纵向失败提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnFailToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">纵向警告提示</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnWarningToast">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">关闭提示后执行回调</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="callbackToast">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

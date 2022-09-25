@@ -1,0 +1,1 @@
+<mt-picker trigger="{{trigger}}" bgColor="{{bgColor}}" placeholder="{{placeholder || '请选择'}}" title="{{ title }}" placeholder="{{placeholder}}" type="{{type}}" selectedText="{{selectedText}}" selectedIndex="{{selectedIndex}}" items="{{ items }}" bindchange="onChange" bindconfirm="onConfirm" class="mt-datepicker"/>

@@ -1,0 +1,226 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-radio
+                            checked="{{case_1.checked}}"
+                            bindchange="case1Change">{{case_1.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio
+                            checked="{{case_2.checked}}"
+                            bindchange="case2Change">{{case_2.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio disabled>禁用状态</mt-radio>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">勾选类型</view>
+                    <view class="pannel-bd">
+                        <mt-radio
+                            type="check"
+                            checked="{{case_3.checked}}"
+                            bindchange="case3Change">{{case_3.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio
+                            type="check"
+                            checked="{{case_4.checked}}"
+                            bindchange="case4Change">{{case_4.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio type="check" disabled>禁用状态</mt-radio>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">按钮类型</view>
+                    <view class="pannel-bd pa">
+                        <view class="mb">
+                            <mt-radio
+                                type="button"
+                                checked="{{case_5.checked}}"
+                                bindchange="case5Change">{{case_5.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        </view>
+                        <view class="mb">
+                            <mt-radio
+                                type="button"
+                                checked="{{case_6.checked}}"
+                                bindchange="case6Change">{{case_6.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        </view>
+                        <view class="mb">
+                            <mt-radio type="button" disabled>禁用状态</mt-radio>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义颜色</view>
+                    <view class="pannel-bd">
+                        <mt-radio
+                            checkedColor="#4876ff"
+                            checked="{{case_7.checked}}"
+                            bindchange="case7Change">{{case_7.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio
+                            checkedColor="#fec51d"
+                            checked="{{case_8.checked}}"
+                            bindchange="case8Change">{{case_8.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                        <mt-radio
+                            checkedColor="#fa5151"
+                            checked="{{case_9.checked}}"
+                            bindchange="case9Change">{{case_9.checked ? '选中状态' : '未选状态'}}</mt-radio>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">条件筛选</view>
+                    <view class="pannel-bd">
+                        <mt-radio-group
+                            type="button"
+                            items="{{group_1.items}}"
+                            column="3"
+                            columnGap="18"
+                            bindchange="group1Change"
+                            class="filter">
+                        </mt-radio-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">单选列表（一）</view>
+                    <view class="pannel-bd">
+                        <mt-radio-group
+                            title="{{group_2.title}}"
+                            items="{{group_2.items}}"
+                            bindchange="group2Change">
+                        </mt-radio-group>
+                        <mt-radio-group
+                            title="{{group_3.title}}"
+                            items="{{group_3.items}}"
+                            bindchange="group3Change">
+                        </mt-radio-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">单选列表（二）</view>
+                    <view class="pannel-bd">
+                        <mt-radio-group
+                            iconPosition="right"
+                            title="{{group_4.title}}"
+                            items="{{group_4.items}}"
+                            bindchange="group4Change">
+                        </mt-radio-group>
+                        <mt-radio-group
+                            iconPosition="right"
+                            title="{{group_5.title}}"
+                            items="{{group_5.items}}"
+                            bindchange="group5Change">
+                        </mt-radio-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">单选列表（三）</view>
+                    <view class="pannel-bd">
+                        <mt-radio-group
+                            type="button"
+                            title="{{group_6.title}}"
+                            items="{{group_6.items}}"
+                            bindchange="group6Change">
+                        </mt-radio-group>
+                        <mt-radio-group
+                            type="button"
+                            title="{{group_7.title}}"
+                            items="{{group_7.items}}"
+                            bindchange="group7Change">
+                        </mt-radio-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">单选列表（四）</view>
+                    <view class="pannel-bd">
+                        <mt-radio-group
+                            direction="row"
+                            title="{{group_8.title}}"
+                            items="{{group_8.items}}"
+                            bindchange="group8Change">
+                        </mt-radio-group>
+                        <mt-radio-group
+                            direction="row"
+                            title="{{group_9.title}}"
+                            items="{{group_9.items}}"
+                            bindchange="group9Change">
+                        </mt-radio-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（一）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" placeholder="请输入内容..."></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="radio"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-radio-group
+                                direction="row"
+                                items="{{group_8.items}}"
+                                bindchange="group8Change">
+                            </mt-radio-group>
+                        </mt-field>
+                        <mt-field
+                            type="radio"
+                            direction="column"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-radio-group
+                                direction="row"
+                                items="{{group_9.items}}"
+                                bindchange="group9Change">
+                            </mt-radio-group>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（二）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" placeholder="请输入内容..."></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="radio"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-radio-group
+                                direction="row"
+                                items="{{group_8.items}}"
+                                bindchange="group8Change">
+                            </mt-radio-group>
+                        </mt-field>
+                        <mt-field
+                            type="radio"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-radio-group
+                                direction="row"
+                                items="{{group_9.items}}"
+                                bindchange="group9Change">
+                            </mt-radio-group>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

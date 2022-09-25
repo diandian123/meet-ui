@@ -1,0 +1,7 @@
+/* demo/result/custom-btn.wxss */
+page {
+    background-color: #fff;
+}
+.mt-result__icon {
+    border-radius: 50%;
+}

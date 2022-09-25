@@ -1,0 +1,1 @@
+<view class="mt-tag" style="background: {{bgColor}}; border:1px solid {{bdColor}}; color: {{textColor}}; font-size: {{textSize}}rpx; padding: {{padding}}; border-radius:{{radius}}rpx; {{maxWidth > 0 ? 'max-width:' + maxWidth + 'rpx;' : 'width: auto'}}"><slot></slot></view>

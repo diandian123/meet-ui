@@ -1,0 +1,8 @@
+.mod-progress {
+    margin-bottom: 50rpx;
+}
+.mod-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

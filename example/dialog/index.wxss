@@ -1,0 +1,47 @@
+/* 自定义对话框样式 */
+.ext-class .mt-dialog__main {
+    background-color: #f7f8fa;
+}
+.ext-class .mt-btn--primary {
+    border-color: #fa5151 !important;
+    background: #fa5151 !important;
+    color: #fff !important;
+}
+.ext-class .mt-btn--primary.mt-btn--hover {
+    background-color: #fd3d3d !important;
+}
+
+/* 自定义对话框内容 */
+.dialog {
+    width: 642rpx;
+    position: relative;
+    height: 660rpx;
+    background: url('https://mmbiz.qpic.cn/mmbiz_png/1rqkHu5x3oRD5F1rDM5sEldswpLogUqbiaj5TKpBHZv7XCaMbx8JQib9M8BM63kF7R6vJGZnho4jIzqgWeYwp7fQ/0?wx_fmt=png')
+        no-repeat center center;
+    background-size: 100% 100%;
+    color: #353535;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 76rpx;
+    box-sizing: border-box;
+}
+.dialog__icon {
+    margin: 96rpx 0 30rpx;
+    color: #07c16c;
+}
+.dialog__title {
+    font-size: 34rpx;
+    font-weight: bold;
+}
+.dialog__text {
+    font-size: 30rpx;
+    padding: 30rpx 0 40rpx;
+    text-align: center;
+}
+@media only screen and (orientation: landscape) {
+    .hidden {
+        display: none;
+    }
+}

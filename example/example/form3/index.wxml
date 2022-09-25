@@ -1,0 +1,101 @@
+<view class="details">
+    <view class="header">
+        {{compTitle}}
+    </view>
+    <view class="main">
+        <view class="form">
+            <mt-field type="input" direction="column" label="字段名称" required>
+                <mt-input
+                    bdColor="transparent"
+                    bgColor="#F5F6F8"
+                    hasClear="{{false}}"
+                    value="{{input1}}"
+                    bindinput="handleInput1">
+                </mt-input>
+            </mt-field>
+            <mt-field type="input" direction="column" label="字段名称">
+                <mt-input
+                    bdColor="transparent"
+                    bgColor="#F5F6F8"
+                    hasClear="{{false}}"
+                    value="{{input2}}"
+                    bindinput="handleInput2">
+                </mt-input>
+            </mt-field>
+            <mt-field type="input" direction="column" label="字段名称">
+                <mt-input
+                    bdColor="transparent"
+                    bgColor="#F5F6F8"
+                    hasClear="{{false}}"
+                    value="{{input3}}"
+                    bindinput="handleInput3">
+                </mt-input>
+            </mt-field>
+            <mt-field type="radio" direction="column" label="字段名称" required>
+                <mt-radio-group
+                    direction="row"
+                    items="{{radioList}}"
+                    bindchange="handleRadio">
+                </mt-radio-group>
+            </mt-field>
+            <mt-field type="checkbox" direction="column" label="字段名称">
+                <mt-checkbox-group
+                    direction="row"
+                    items="{{checkboxList}}"
+                    bindchange="handleCheckbox">
+                </mt-checkbox-group>
+            </mt-field>
+            <mt-field type="switch" direction="column" label="字段名称">
+                <mt-switch
+                    checked="{{switchStatus}}"
+                    bindchange="handleSwitch">
+                </mt-switch>
+            </mt-field>
+            <mt-field type="picker" direction="column" label="字段名称" required>
+                <mt-picker
+                    bgColor="#F5F6F8"
+                    title="标题信息"
+                    placeholder="请选择"
+                    items="{{pickerItems}}"
+                    bindconfirm="handlePicker">
+                </mt-picker>
+            </mt-field>
+            <mt-field type="picker" direction="column" label="字段名称">
+                <mt-datepicker
+                    type="date"
+                    bgColor="#F5F6F8"
+                    placeholder="请选择生日"
+                    bindconfirm="handleDate">
+                </mt-datepicker>
+            </mt-field>
+            <mt-field
+                type="textarea"
+                direction="column"
+                label="字段名称">
+                <mt-textarea
+                    bdColor="transparent"
+                    bgColor="#F5F6F8"
+                    value=""
+                    hasCount
+                    maxLength="300"
+                    autoHeight
+                    bindinput="handleTextarea">
+                </mt-textarea>
+            </mt-field>
+            <mt-field
+                type="image-picker"
+                direction="column"
+                label="字段名称"
+
+                required>
+                <mt-imagepicker
+                    items="{{imageList}}"
+                    bindchange="handleImagePicker">
+                </mt-imagepicker>
+            </mt-field>
+            <view class="form__button">
+                <mt-button bindtap="submit" size="l">提交</mt-button>
+            </view>
+        </view>
+    </view>
+</view>

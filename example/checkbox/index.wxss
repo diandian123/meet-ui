@@ -1,0 +1,23 @@
+.agreement {
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  padding: 30rpx 36rpx;
+}
+
+.agreement .mt-checkbox {
+  padding: 0;
+}
+
+.agreement .mt-icon {
+  font-size: 38rpx !important;
+}
+
+.agreement .mt-checkbox__text {
+  font-size: 28rpx;
+}
+
+.agreement .agreement__link {
+  display: inline;
+  color: #63a1ff;
+}

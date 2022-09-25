@@ -1,0 +1,1 @@
+Component({options:{addGlobalClass:!0},properties:{type:{type:String,value:"meet"},name:{type:String,value:""},color:{type:String,value:""},size:{type:Number,value:48},src:{type:String,value:""}},observers:{src(e){e||this.setData({type:"image"})}}});

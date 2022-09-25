@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-indexlist": "meet-ui-miniapp/index-list",
+        "mt-checkbox": "meet-ui-miniapp/checkbox"
+    }
+}

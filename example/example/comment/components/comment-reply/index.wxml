@@ -1,0 +1,61 @@
+<mt-popup
+    visible="{{options.visible}}"
+    title="全部回复"
+    hasGesture
+    bindclose="handleClose">
+    <view class="comment-popup">
+        <scroll-view
+            scroll-y
+            bindscrolltolower="handleLoadmore"
+            class="comment-popup__scroll">
+            <view wx:if="{{options.visible}}" class="comment-popup__list">
+                <mt-comment
+                    options="{{options.comment}}"
+                    data-index="{{-1}}"
+                    maxRow="{{false}}"
+                    hasReply="{{false}}"
+                    binddelete="handleDelete"
+                    bindreply="handleReply"
+                    bindapprove="handleApprove"
+                    class="comment-popup__first">
+                </mt-comment>
+                <view class="plr comment-popup__count">共{{options.comment.replyCount}}条</view>
+                <mt-comment
+                    wx:for="{{replyList}}"
+                    wx:key="commentId"
+                    data-index="{{index}}"
+                    options="{{item}}"
+                    maxRow="{{false}}"
+                    hasRelation="{{options.comment.userInfo.userId !== item.toUserInfo.userId}}"
+                    hasReply="{{false}}"
+                    binddelete="handleDelete"
+                    bindreply="handleReply"
+                    bindapprove="handleApprove">
+                </mt-comment>
+            </view>
+        </scroll-view>
+        <view class="comment-popup__ft">
+            <view
+                bindtap="handleReply"
+                class="comment-popup__ft__input">
+                {{options.placeholder}}
+            </view>
+        </view>
+    </view>
+</mt-popup>
+
+<!-- 输入评论 -->
+<comment-input
+    options="{{inputPopup}}"
+    bindupdate="handleInput">
+</comment-input>
+
+<!-- 删除评论 -->
+<mt-actionsheet
+    visible="{{deleteActionSheet.visible}}"
+    desc="{{deleteActionSheet.desc}}"
+    items="{{deleteActionSheet.items}}"
+    cancelText="{{deleteActionSheet.cancelText}}"
+    bindselect="selectDeleteActionSheet"
+    bindcancel="closeDeleteActionSheet">
+</mt-actionsheet>

@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="mod-search">
+        <mt-search
+            autoSearch="{{autoSearch}}"></mt-search>
+    </view>
+    <view class="mod-indexlist">
+        <mt-indexlist
+            hasSafe
+            items="{{items}}"
+            bindclick="handleClick">
+        </mt-indexlist>
+    </view>
+</view>

@@ -1,0 +1,67 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-cell title="全部">
+                            <view slot="right">
+                                <mt-switch-bar items="{{switchList1}}" bindchange="handleChange1"></mt-switch-bar>
+                            </view>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">三项切换</view>
+                    <view class="pannel-bd">
+                        <mt-cell title="全部">
+                            <view slot="right">
+                                <mt-switch-bar
+                                    items="{{switchList2}}"
+                                    bindchange="handleChange2">
+                                </mt-switch-bar>
+                            </view>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">默认选择</view>
+                    <view class="pannel-bd">
+                        <mt-cell title="全部">
+                            <view slot="right">
+                                <mt-switch-bar
+                                    items="{{switchList3}}"
+                                    current="2"
+                                    bindchange="handleChange3">
+                                </mt-switch-bar>
+                            </view>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义小红点</view>
+                    <view class="pannel-bd">
+                        <mt-cell title="全部">
+                            <view slot="right">
+                                <mt-switch-bar
+                                    items="{{switchList4}}"
+                                    bindchange="handleChange4">
+                                </mt-switch-bar>
+                            </view>
+                        </mt-cell>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

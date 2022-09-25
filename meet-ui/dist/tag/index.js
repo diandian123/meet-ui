@@ -1,0 +1,1 @@
+Component({options:{addGlobalClass:!0},properties:{bdColor:{type:String,value:"transparent"},bgColor:{type:String,value:"#f5f6f8"},textColor:{type:String,value:"#808080"},textSize:{type:Number,value:22},padding:{type:String,value:"10rpx"},radius:{type:Number,value:8},maxWidth:{type:Number,value:-1}}});

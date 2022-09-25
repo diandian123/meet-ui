@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "滑动标签列表（示例）",
+    "usingComponents": {
+        "mt-tab": "meet-ui-miniapp/tab",
+        "mt-card": "meet-ui-miniapp/card",
+        "mt-loadmore": "meet-ui-miniapp/loadmore",
+        "mt-backtop": "meet-ui-miniapp/backtop"
+    }
+}

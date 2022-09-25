@@ -1,0 +1,28 @@
+<view class="mt-error {{height > 0 ? 'mt-error--local' : 'mt-error--global'}}"
+    style="background-color: {{bgColor}}; {{height > 0 ? 'height: ' + height + 'rpx': ''}}">
+    <!-- 自定义错误内容 -->
+    <block wx:if="{{type === 'custom'}}">
+        <slot></slot>
+    </block>
+    <!-- 默认错误 -->
+    <block wx:else>
+        <view class="mt-error__bd">
+            <!-- 图片 -->
+            <image src="{{icon || './images/default.png'}}" class="mt-error__icon"></image>
+            <!-- 文案描述 -->
+            <view class="mt-error__text">
+                {{text || '服务出问题了，请稍后再试～'}}
+            </view>
+            <!-- 按钮 -->
+            <mt-button
+                wx:if="{{hasBtn}}"
+                type="plain"
+                size="s"
+                bindtap="handleButton"
+                class="mt-error__btn">{{btnText}}
+            </mt-button>
+        </view>
+        <!-- 错误相关追踪信息 -->
+        <view wx:if="{{traceId}}" class="mt-error__ext">{{traceId}}</view>
+    </block>
+</view>

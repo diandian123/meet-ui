@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-icon": "meet-ui-miniapp/icon"
+    }
+}

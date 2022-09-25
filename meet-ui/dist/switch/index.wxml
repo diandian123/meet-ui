@@ -1,0 +1,1 @@
+<view class="mt-switch {{checked ? 'mt-switch--checked' : ''}} {{disabled ? 'mt-switch--disabled' : ''}}" style="background: {{checked ? checkedColor : '#ccc'}};" bindtap="handleToggle"><view class="mt-switch__main"></view></view>

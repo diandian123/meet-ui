@@ -1,0 +1,4 @@
+<mt-error
+    type="404"
+    icon="/example/error/images/404.png"
+    btnEvent="goHome"></mt-error>

@@ -1,0 +1,248 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker1.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">默认选择（索引）</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker2.items}}"
+                                selectedIndex="{{picker2.selectedIndex}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">默认选择（值）</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker3.items}}"
+                                selectedValue="{{picker3.selectedValue}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示清除图标</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker4.items}}"
+                                selectedIndex="{{picker4.selectedIndex}}"
+                                showDelete
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <!-- <view class="pannel">
+                    <view class="pannel-hd">选项为空</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker5.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view> -->
+                <view class="pannel">
+                    <view class="pannel-hd">禁用状态</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker6.items}}"
+                                disabled
+                                binddisable="handleDisable1" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">靠左显示</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="left" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker2.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">级联选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择学段" position="right">
+                            <mt-picker
+                                items="{{picker7.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                        <mt-field type="picker" label="选择年级" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker8.items}}"
+                                selectedIndex="{{picker8.selectedIndex}}"
+                                disabled="{{!picker8.items.length}}"
+                                binddisable="handleDisable2"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义级联选择默认值</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择学段" position="right">
+                            <mt-picker
+                                items="{{picker9.items}}"
+                                selectedValue="{{picker9.selectedValue}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                        <mt-field type="picker" label="选择年级" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker10.items}}"
+                                selectedValue="{{picker10.selectedValue}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">二列非联动选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" required position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker11.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">三列非联动选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" required position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker12.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">二列联动选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker13.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">三列联动选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                items="{{picker14.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义选择器标题</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right" hasDivider="{{false}}">
+                            <mt-picker
+                                title="请选择类型"
+                                placeholder="请选择类型"
+                                items="{{picker15.items}}"
+                                confirmText="确认"
+                                cancelText="取消"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">动态更新选项内容</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="字段名称" position="right">
+                            <mt-picker
+                                items="{{picker16.items}}"
+                                selectedValue="{{picker16.selectedValue}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                    <view class="pa">
+                        <mt-button type="plain" size="m" bindtap="changDate">更新</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">点击按钮触发</view>
+                    <view class="pannel-bd pa">
+                        <mt-button type="plain" size="m" bindtap="showPicker">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            required
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="picker"
+                            label="字段名称"
+                            position="right"
+                            hasDivider>
+                            <mt-picker
+                                items="{{picker1.items}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                        <mt-field
+                            type="picker"
+                            label="字段名称"
+                            position="right"
+                            required>
+                            <mt-picker
+                                items="{{picker2.items}}"
+                                selectedIndex="{{picker2.selectedIndex}}"
+                                bindconfirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-picker
+    id="btnPicker"
+    trigger="button"
+    items="{{picker17.items}}"
+    bindconfirm="btnPickerConfirm">
+</mt-picker>
+<mt-toast id="meetToast"></mt-toast>
+<mt-dialog id="meetDialog"></mt-dialog>

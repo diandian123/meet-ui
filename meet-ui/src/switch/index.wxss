@@ -1,0 +1,40 @@
+.mt-switch {
+  padding: 2px;
+  background-color: #cccccc;
+  border-radius: 50rpx;
+  transition: all 0.2s ease-in-out;
+}
+
+.mt-switch__main {
+  width: 72rpx;
+  height: 36rpx;
+  position: relative;
+}
+
+.mt-switch__main::after {
+  content: '';
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: left 0.2s ease-in-out;
+}
+
+.mt-switch--checked {
+  background-color: #07c16c;
+}
+
+.mt-switch--checked .mt-switch__main::after {
+  position: absolute;
+  top: 0;
+  left: 36rpx;
+  z-index: 1;
+}
+
+.mt-switch--disabled {
+  opacity: 0.5;
+}

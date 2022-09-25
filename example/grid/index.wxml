@@ -1,0 +1,86 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            bdType="inner"
+                            items="{{case_1}}"
+                            column="2"
+                            iconRadius="32">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">九宫格</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            bdType="inner"
+                            items="{{case_2}}"
+                            column="3"
+                            iconRadius="32">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">每行四列</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            items="{{case_3}}"
+                            column="4"
+                            iconRadius="32">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">每行五列</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            items="{{case_4}}"
+                            column="5"
+                            iconWidth="60"
+                            iconHeight="60"
+                            iconRadius="32"
+                            titleSize="24"></mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">消息提醒</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            bdType="inner"
+                            title="分组标题"
+                            items="{{case_5}}"
+                            iconRadius="32">
+                        </mt-grid>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">横排网格</view>
+                    <view class="pannel-bd">
+                        <mt-grid
+                            bdType="inner"
+                            title="分组标题"
+                            items="{{case_6}}"
+                            direction="row"
+                            column="2"
+                            iconWidth="66"
+                            iconHeight="66"
+                            iconRadius="32"></mt-grid>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

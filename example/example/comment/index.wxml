@@ -1,0 +1,68 @@
+<view class="container">
+    <view class="main">
+        <scroll-view
+            scroll-y="{{true}}"
+            refresher-enabled="{{true}}"
+            refresher-triggered="{{refreshFlag}}"
+            bindrefresherrefresh="handleRefresh"
+            bindscrolltolower="handleLoadmore"
+            class="scroll-view">
+            <view class="demo-placeholder">占位区域</view>
+            <mt-cell title="全部评论">
+                <view slot="right">
+                    <mt-switch-bar items="{{switchList1}}"></mt-switch-bar>
+                </view>
+            </mt-cell>
+            <view class="comment__list">
+                <mt-comment
+                    wx:for="{{commentList}}"
+                    wx:key="commentId"
+                    data-index="{{index}}"
+                    options="{{item}}"
+                    hasMore="{{item.isMe === true}}"
+                    bind:user="handleUser"
+                    bind:more="handleMore"
+                    bind:reply="handleReply"
+                    bind:approve="handleApproveComment">
+                </mt-comment>
+                <mt-loadmore hasMore="{{hasMore}}" dividerText="已显示全部评论"></mt-loadmore>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="footer safe">
+        <mt-feedback-bar
+            placeholder="发表我的评论..."
+            options="{{feedbackBar}}"
+            bind:comment="handleAddComment"
+            bind:list="handleToComment"
+            bind:approve="handleDoApprove"
+            bind:collect="handleDoCollect"
+            bind:share="handleDoShare">
+        </mt-feedback-bar>
+    </view>
+</view>
+
+<!-- 输入评论弹层 -->
+<comment-input
+    options="{{inputPopup}}"
+    bindupdate="handleUpdate">
+</comment-input>
+
+<!-- 查看回复弹层 -->
+<comment-reply
+    options="{{replyPopup}}"
+    bindupdate="handleUpdate">
+</comment-reply>
+
+<!-- 删除评论面板 -->
+<mt-actionsheet
+    visible="{{deleteActionSheet.visible}}"
+    desc="{{deleteActionSheet.desc}}"
+    items="{{deleteActionSheet.items}}"
+    cancelText="{{deleteActionSheet.cancelText}}"
+    bindselect="selectDeleteActionSheet"
+    bindcancel="closeDeleteActionSheet">
+</mt-actionsheet>
+
+<!-- 轻提示 -->
+<mt-toast id="meetToast"></mt-toast>

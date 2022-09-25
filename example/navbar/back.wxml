@@ -1,0 +1,55 @@
+<!-- 自定义导航栏 -->
+<mt-navbar
+    type="back"
+    mode="fixed"
+    title="{{navBarStatus.title}}"
+    textColor="{{pageStatus === 'normal' ? '#ffffff' : '#333'}}"
+    transform="{{navBarStatus.transform}}">
+</mt-navbar>
+<!-- 内容区 -->
+<view class="container safe">
+    <!-- 页面加载中 -->
+    <block wx:if="{{pageStatus === 'loading'}}">
+        <mt-loading scene="page" type="meet"></mt-loading>
+    </block>
+    <!-- 页面异常状态 -->
+    <block wx:elif="{{pageStatus === 'error'}}">
+        <mt-error icon="{{errorStatus.icon}}" text="{{errorStatus.text}}" traceId="{{errorStatus.traceId}}"></mt-error>
+    </block>
+    <!-- 页面空状态 -->
+    <block wx:elif="{{pageStatus === 'empty'}}">
+        <mt-empty icon="{{emptyStatus.icon}}" text="{{emptyStatus.text}}"></mt-empty>
+    </block>
+    <!-- 页面正常状态 -->
+    <block wx:else>
+        <view class="main">
+            <!-- 幕帘 -->
+            <view class="mod-curtain">
+                <image src="/example/images/meet.jpg" mode="aspectFill" class="mod-curtain__img"></image>
+            </view>
+            <!-- 卡片列表 -->
+            <view class="mod-list">
+                <mt-cell title="全部动态">
+                    <view slot="right">
+                        <mt-switch-bar items="{{switchItems}}"></mt-switch-bar>
+                    </view>
+                </mt-cell>
+                <mt-feed
+                    wx:for="{{feedList}}"
+                    wx:key="index"
+                    data-index="{{index}}"
+                    options="{{item}}"
+                    hasMore="{{true}}"
+                    bind:user="handleUser"
+                    bind:more="handleMore"
+                    bind:detail="handleDetail"
+                    bind:comment="handleComment"
+                    bind:approve="handleApprove"></mt-feed>
+            </view>
+        </view>
+    </block>
+</view>
+<!-- 公共提示 -->
+<mt-toast id="meetToast"></mt-toast>
+<!-- 公共对话框 -->
+<mt-dialog id="meetDialog"></mt-dialog>

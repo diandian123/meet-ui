@@ -1,0 +1,14 @@
+.cus-collapse .mt-collapse__detail {
+    background: #f5f6f8;
+    padding: 24rpx 32rpx;
+    border-radius: 24rpx;
+}
+.cus-collapse .mt-collapse::after,
+.cus-collapse .mt-collapse .mt-collapse__hd::after {
+    display: none;
+}
+.cus-collapse__title {
+    display: flex;
+    align-items: center;
+    color: #07c16c;
+}

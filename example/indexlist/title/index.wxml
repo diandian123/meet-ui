@@ -1,0 +1,1 @@
+<mt-indexlist title="共{{items.length}}项" items="{{items}}" bindclick="handleClick"></mt-indexlist>

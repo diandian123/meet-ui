@@ -1,0 +1,68 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">纯直线</view>
+                    <view class="pannel-bd">
+                        <mt-divider></mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">带提示信息</view>
+                    <view class="pannel-bd">
+                        <mt-divider>提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">虚线分割</view>
+                    <view class="pannel-bd">
+                        <mt-divider type="dashed">提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">点线分割</view>
+                    <view class="pannel-bd">
+                        <mt-divider type="dotted">提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义左右间隔</view>
+                    <view class="pannel-bd">
+                        <mt-divider rowGap="100">提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义文本颜色</view>
+                    <view class="pannel-bd">
+                        <mt-divider textColor="#07c16c">提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义线条颜色</view>
+                    <view class="pannel-bd">
+                        <mt-divider lineColor="#808080">提示信息</mt-divider>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义分割线</view>
+                    <view class="pannel-bd">
+                        <mt-divider
+                            textSize="30"
+                            textColor="#07c16c"
+                            lineColor="#07c16c">全部评论（99）</mt-divider>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

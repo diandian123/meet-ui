@@ -1,0 +1,70 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-collapse-group>
+                            <mt-collapse
+                                wx:for="{{case_1}}"
+                                wx:key="index"
+                                title="{{item.title}}">
+                                {{item.content}}</mt-collapse>
+                        </mt-collapse-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义默认展开项</view>
+                    <view class="pannel-bd">
+                        <mt-collapse-group current="1">
+                            <mt-collapse
+                                wx:for="{{case_1}}"
+                                wx:key="index"
+                                title="{{item.title}}">
+                                {{item.content}}</mt-collapse>
+                        </mt-collapse-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">手风琴效果</view>
+                    <view class="pannel-bd">
+                        <mt-collapse-group accordion bindchange="handleChange">
+                            <mt-collapse
+                                wx:for="{{case_1}}"
+                                wx:key="index"
+                                title="{{item.title}}">
+                                {{item.content}}</mt-collapse>
+                        </mt-collapse-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义样式</view>
+                    <view class="pannel-bd">
+                        <mt-collapse-group current="0">
+                            <mt-collapse
+                                wx:for="{{case_1}}"
+                                wx:key="index"
+                                class="cus-collapse">
+                                <view slot="title" class="cus-collapse__title">
+                                    <mt-icon name="mt-icon--wx" class="mr10"></mt-icon>
+                                    <view>{{item.title}}</view>
+                                </view>
+                                {{item.content}}
+                            </mt-collapse>
+                        </mt-collapse-group>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

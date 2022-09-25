@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="mod-indexlist">
+        <mt-indexlist
+            hasSafe="{{false}}"
+            hasSelect
+            items="{{items}}"
+            bindselect="selectItem">
+        </mt-indexlist>
+    </view>
+    <view class="mod-footer">
+        <view class="mod-filter">
+            <mt-checkbox
+                checked="{{hasChecked}}"
+                bindchange="handleFilterChange">全选</mt-checkbox>
+            <view class="mod-filter__tips">已选择 {{checkArr.length}}/{{items.length}} </view>
+        </view>
+        <view class="mod-footer__submit">
+            <mt-button bindtap="sendChecked" size="l" fontColor="black">提交</mt-button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,26 @@
+.popup__header {
+    padding: 20rpx;
+    position: relative;
+}
+.popup__cancel {
+    font-size: 30rpx;
+    color: #333333;
+    padding: 0 22rpx;
+    position: absolute;
+    left: 20rpx;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.popup__title {
+    text-align: center;
+}
+.popup__class {
+    font-weight: 500;
+    font-size: 34rpx;
+    color: #333333;
+}
+.mt-indexlist {
+    padding-bottom: 0 !important;
+}

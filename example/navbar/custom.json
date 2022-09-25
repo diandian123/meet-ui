@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mt-navbar": "meet-ui-miniapp/navbar",
+        "mt-swiper": "meet-ui-miniapp/swiper",
+        "mt-grid": "meet-ui-miniapp/grid",
+        "mt-card": "meet-ui-miniapp/card",
+        "mt-toast": "meet-ui-miniapp/toast"
+    }
+}

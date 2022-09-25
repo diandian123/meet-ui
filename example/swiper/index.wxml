@@ -1,0 +1,75 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd ptb">
+                        <mt-swiper
+                            width="672"
+                            height="270"
+                            items="{{case_1}}">
+                        </mt-swiper>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">卡片类型</view>
+                    <view class="pannel-bd ptb">
+                        <mt-swiper
+                            type="card"
+                            height="320"
+                            items="{{case_2}}"
+                            indicatorColor="rgba(0, 0, 0, .2)"
+                            indicatorActiveColor="#07c16c">
+                        </mt-swiper>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示标题信息</view>
+                    <view class="pannel-bd ptb">
+                        <mt-swiper
+                            width="672"
+                            height="270"
+                            hasTitle="{{true}}"
+                            items="{{case_1}}">
+                        </mt-swiper>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义点击事件</view>
+                    <view class="pannel-bd ptb">
+                        <mt-swiper
+                            width="672"
+                            height="270"
+                            items="{{case_2}}"
+                            bindclick="handleClick">
+                        </mt-swiper>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">闪屏应用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toSplashPage">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">全屏应用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toFullpage">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 公共提示 -->
+<mt-toast id="meetToast"></mt-toast>

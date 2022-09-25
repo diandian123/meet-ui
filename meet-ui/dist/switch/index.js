@@ -1,0 +1,1 @@
+Component({options:{addGlobalClass:!0},properties:{checked:{type:Boolean,value:!1},checkedColor:{type:String,value:"#07c16c"},disabled:{type:Boolean,value:!1},async:{type:Boolean,value:!1}},methods:{handleToggle(){var e;this.data.disabled||(e=!this.data.checked,this.data.async||this.setData({checked:e}),this.triggerEvent("change",{checked:e}))}}});

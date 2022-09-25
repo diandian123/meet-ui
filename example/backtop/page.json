@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-backtop": "meet-ui-miniapp/backtop",
+        "mt-avatar": "meet-ui-miniapp/avatar"
+    }
+}

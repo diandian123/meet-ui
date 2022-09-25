@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "index-list": "meet-ui-miniapp/index-list",
+        "mt-popup": "meet-ui-miniapp/popup"
+    }
+}

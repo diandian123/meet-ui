@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-feed": "meet-ui-miniapp/feed"
+    }
+}

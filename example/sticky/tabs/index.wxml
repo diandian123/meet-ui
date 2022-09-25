@@ -1,0 +1,61 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="示例">
+            <mt-icon slot="left" type="custom" name="icon-comp--sticky" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+        <view class="details-header__desc">向下滑动页面，Tab标签头吸顶</view>
+    </view>
+    <view>
+        <view class="sticky">
+            <view class="demo-placeholder">占位区域</view>
+            <mt-tab sticky scrollTop="{{scrollTop}}" miniBar items="{{tabs}}">
+                <view
+                    wx:for="{{tabs}}"
+                    wx:key="index"
+                    slot="{{item.id}}">
+                    <view>
+                        <block wx:if="{{index === 0}}">
+                            <mt-card
+                                wx:for="{{10}}"
+                                wx:key="index"
+                                image="/example/images/meet.png"
+                                imageWidth="180"
+                                imageHeight="180"
+                                title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                                desc="描述信息"
+                                hasDivider="{{true}}">
+                            </mt-card>
+                        </block>
+                        <block wx:elif="{{index === 1}}">
+                            <mt-card
+                                wx:for="{{10}}"
+                                wx:key="index"
+                                type="video"
+                                image="/example/images/poster.jpg"
+                                imageMark="12:50"
+                                imagePosition="top"
+                                imageHeight="340"
+                                title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                                desc="描述信息"
+                                class="db mb24">
+                            </mt-card>
+                        </block>
+                        <block wx:else>
+                            <mt-card
+                                wx:for="{{10}}"
+                                wx:key="index"
+                                image="/example/images/meet.png"
+                                imagePosition="right"
+                                imageWidth="220"
+                                imageHeight="180"
+                                title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                                desc="描述信息"
+                                hasDivider="{{true}}">
+                            </mt-card>
+                        </block>
+                    </view>
+                </view>
+            </mt-tab>
+        </view>
+    </view>
+</view>

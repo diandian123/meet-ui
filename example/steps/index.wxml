@@ -1,0 +1,117 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <mt-steps items="{{case_1.item}}" current="{{case_1.current}}"></mt-steps>
+                        <view class="pt50 tc">
+                            <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{1}}" bindtap="onclick">下一步</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">图标类型</view>
+                    <view class="pannel-bd pa">
+                        <mt-steps
+                            type="icon"
+                            items="{{case_2.item}}"
+                            current="{{case_2.current}}">
+                        </mt-steps>
+                        <view class="pt50 tc">
+                            <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{2}}" bindtap="onclick">下一步</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">自定义样式</view>
+                    <view class="pannel-bd pa" style="background: #07c16c;">
+                        <mt-steps
+                            type="image"
+                            current="{{case_3.current}}"
+                            items="{{case_3.item}}"
+                            doneIcon="{{case_3.doneIcon}}"
+                            doingIcon="{{case_3.doingIcon}}"
+                            todoIcon="{{case_3.todoIcon}}"
+                            errorIcon="{{case_3.errorIcon}}"
+                            titleColor="#fff"
+                            descColor="#fff">
+                        </mt-steps>
+                        <view class="pt50 tc">
+                            <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{3}}" bindtap="onclick">下一步</mt-button>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">当前步骤错误</view>
+                    <view class="pannel-bd pa">
+                        <mt-steps
+                            type="icon"
+                            current="{{case_4.current}}"
+                            items="{{case_4.item}}">
+                        </mt-steps>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">竖向步骤条（数字）</view>
+                    <view class="pannel-bd pa">
+                        <mt-steps
+                            direction="column"
+                            items="{{case_5.item}}"
+                            current="{{case_5.current}}">
+                        </mt-steps>
+                    </view>
+                    <view class="pb30 tc">
+                        <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{5}}" bindtap="onclick">下一步</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">竖向步骤条（图标）</view>
+                    <view class="pannel-bd pa">
+                        <mt-steps
+                            type="icon"
+                            direction="column"
+                            items="{{case_6.item}}"
+                            current="{{case_6.current}}">
+                        </mt-steps>
+                    </view>
+                    <view class="pb30 tc">
+                        <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{6}}" bindtap="onclick">下一步</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">竖向步骤条（图片）</view>
+                    <view class="pannel-bd pa" style="background: #07c16c;">
+                        <mt-steps
+                            type="image"
+                            direction="column"
+                            current="{{case_7.current}}"
+                            items="{{case_7.item}}"
+                            doneIcon="{{case_7.doneIcon}}"
+                            doingIcon="{{case_7.doingIcon}}"
+                            todoIcon="{{case_7.todoIcon}}"
+                            errorIcon="{{case_7.errorIcon}}"
+                            lineDoneColor="#fff"
+                            lineTodoColor="#fff"
+                            titleColor="#fff"
+                            descColor="#fff">
+                        </mt-steps>
+                        <view class="pb30 tc">
+                            <mt-button type="plain" height="66" textSize="30" radius="66" class="dib" data-index="{{7}}" bindtap="onclick">下一步</mt-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

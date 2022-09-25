@@ -1,0 +1,9 @@
+<view>
+    <mt-badge position="top" value="{{item.badgeVal}}">
+        <mt-avatar
+            radius="16"
+            src="{{item.icon}}">
+        </mt-avatar>
+    </mt-badge>
+    <text class="demo-grid__text">{{item.title}}</text>
+</view>

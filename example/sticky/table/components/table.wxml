@@ -1,0 +1,29 @@
+<view class="table table-border" id="{{sticky?'container':''}}">
+    <!-- 表格头 start -->
+    <mt-sticky container="{{container}}" disabled="{{!sticky}}" scrollTop="{{scrollTop}}">
+        <view class="thead thead-border">
+            <view wx:for="{{ headers }}" wx:key="index" class="td" style="width:{{ item.width }}rpx;">
+                {{ item.label }}
+            </view>
+        </view>
+    </mt-sticky>
+    <!-- 表格头 end -->
+    <!-- 表格体 start -->
+    <block wx:if="{{ data.length > 0 }}" wx:for-item="it" wx:for="{{ data }}" wx:key="index" wx:for-index="idx">
+        <view class="tbody-tr tbody-tr-stripe tbody-tr-border">
+            <view
+                wx:for-item="head"
+                wx:for="{{ headers }}"
+                wx:key="index"
+                class="td"
+                data-it="{{it}}"
+                data-row="{{index}}"
+                data-column="{{idx+1}}"
+                style="width:{{ headers[index].width }}rpx;color:{{ headers[index].color }};"
+                bindtap="onRowClick">
+                {{it[head["prop"]]}}
+            </view>
+        </view>
+    </block>
+    <!-- 表格体 end -->
+</view>

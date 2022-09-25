@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mt-button": "meet-ui-miniapp/button",
+        "mt-popup": "meet-ui-miniapp/popup",
+        "mt-card": "meet-ui-miniapp/card",
+        "mt-textarea": "meet-ui-miniapp/textarea"
+    }
+}

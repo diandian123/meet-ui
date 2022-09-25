@@ -1,0 +1,7 @@
+<mt-result
+    icon="/example/images/meet.png"
+    size="l"
+    title="标题内容"
+    desc="描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息"
+    btnText="返回"
+    bindclick="handleClick"> </mt-result>

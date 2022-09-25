@@ -1,0 +1,1 @@
+<view wx:if="{{visible}}" bindtap="handleBackTop" class="mt-backtop" style="right: {{right}}rpx; bottom: {{bottom}}rpx; background-color: {{bgColor}}"><mt-icon wx:if="{{type === 'preset'}}" name="mt-icon--top" size="56" color="{{iconColor}}"></mt-icon><slot wx:else></slot></view>

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-loading": "../loading",
+        "mt-divider": "../divider"
+    }
+}

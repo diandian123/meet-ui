@@ -1,0 +1,8 @@
+<mt-indexlist
+    type="card"
+    items="{{items}}"
+    hasDelete
+    bindclick="handleClick"
+    binddelete="handleDelete">
+</mt-indexlist>
+<mt-dialog id="meetDialog"></mt-dialog>

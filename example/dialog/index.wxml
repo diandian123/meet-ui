@@ -1,0 +1,153 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="normalDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">成功对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="successDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">失败对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="failDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">警告对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="alertDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">确认对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="confirmDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">带输入对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="promptDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">不显示标题</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="noTitleDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义顶部图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="customIconDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义按钮内容</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="customBtnDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义按钮事件</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="customBtnEventDialog">演示</mt-button>
+                    </view>
+                </view>
+                <!-- <view class="pannel">
+                    <view class="pannel-hd">点击蒙层关闭</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="maskCloseDialog">演示</mt-button>
+                    </view>
+                </view> -->
+                <view class="pannel">
+                    <view class="pannel-hd">按钮纵向排列</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="columnConfirmDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示微信特性按钮</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="openTypeDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示关闭图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showCloseDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示超长内容</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="longTextDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示多个按钮</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="moreBtnsDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel hidden">
+                    <view class="pannel-hd">显示头部情景图</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="headImgDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel hidden">
+                    <view class="pannel-hd">顶部入场动画</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="fadeInDownDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义对话框样式</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="extClassDialog">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel hidden">
+                    <view class="pannel-hd">自定义对话框</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="customDialog">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 对话框组件 -->
+<mt-dialog id="meetDialog"></mt-dialog>
+<!-- 提示组件 -->
+<mt-toast id="meetToast"></mt-toast>
+<!-- 自定义对话框  -->
+<mt-dialog id="customDialog">
+    <view class="dialog">
+        <mt-icon
+            name="mt-icon--success-b"
+            size="112"
+            class="dialog__icon"></mt-icon>
+        <text class="dialog__title">操作成功</text>
+        <text class="dialog__text">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</text>
+        <mt-button type="plain" width="280" height="72" radius="36" bindtap="closeCustomDialog">关闭</mt-button>
+    </view>
+</mt-dialog>

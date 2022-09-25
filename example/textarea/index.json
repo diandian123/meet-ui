@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "mt-field": "meet-ui-miniapp/field",
+        "mt-input": "meet-ui-miniapp/input",
+        "mt-textarea": "meet-ui-miniapp/textarea"
+    }
+}

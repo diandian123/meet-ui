@@ -1,0 +1,24 @@
+<!-- 输入评论弹层 -->
+<mt-popup
+    visible="{{options.visible}}"
+    zIndex="9001"
+    bindclose="handleClose">
+    <view class="input-popup">
+        <slot></slot>
+        <mt-textarea
+            focus="{{options.visible}}"
+            placeholder="{{options.placeholder}}"
+            height="200"
+            bdColor="transparent"
+            bgColor="#f7f8fa"
+            value="{{inputVal}}"
+            maxLength="500"
+            cursor-spacing="170"
+            bindinput="handleInput"></mt-textarea>
+        <view class="input-popup__ft">
+            <text>{{inputVal.length}}/{{500}}</text>
+            <mt-button wx:if="{{!inputVal.length}}" width="120" height="54" disabled>发布</mt-button>
+            <mt-button wx:else type="primary" width="120" height="54" bindtap="handlePublish">发布</mt-button>
+        </view>
+    </view>
+</mt-popup>

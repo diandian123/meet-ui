@@ -1,0 +1,64 @@
+<view class="container">
+    <!-- 自定义导航 -->
+    <mt-navbar
+        type="auto"
+        home="/example/index/index"
+        textColor="#fff"
+        background="linear-gradient(90deg, #47d998, #01d5d8);"
+        title="标题信息">
+    </mt-navbar>
+    <!-- 内容区 -->
+    <view class="content">
+        <!-- 页面加载中 -->
+        <block wx:if="{{pageStatus === 'loading'}}">
+            <mt-loading scene="page" type="meet"></mt-loading>
+        </block>
+        <!-- 页面载入出错 -->
+        <block wx:elif="{{pageStatus === 'error'}}">
+            <mt-error icon="{{errorStatus.icon}}" text="{{errorStatus.text}}" traceId="{{errorStatus.traceId}}"></mt-error>
+        </block>
+        <!-- 页面空状态 -->
+        <block wx:elif="{{pageStatus === 'empty'}}">
+            <mt-empty icon="{{emptyStatus.icon}}" text="{{emptyStatus.text}}"></mt-empty>
+        </block>
+        <!-- 页面正常状态 -->
+        <scroll-view
+            scroll-y="true"
+            refresher-enabled="{{true}}"
+            refresher-triggered="{{refreshStatus}}"
+            bindrefresherrefresh="handleRefresh"
+            class="main safe">
+            <view class="mod-swiper">
+                <mt-swiper
+                    width="672"
+                    height="270"
+                    items="{{swiperItems}}">
+                </mt-swiper>
+            </view>
+            <view class="mod-grid">
+                <mt-grid
+                    column="5"
+                    iconRadius="52"
+                    items="{{gridItems}}">
+                </mt-grid>
+            </view>
+            <view class="mod-list">
+                <mt-card
+                    wx:for="{{20}}"
+                    wx:key="index"
+                    image="/example/images/poster.jpg"
+                    imagePosition="right"
+                    imageWidth="220"
+                    imageHeight="180"
+                    title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    desc="描述信息"
+                    hasDivider="{{true}}">
+                </mt-card>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<!-- 公共提示 -->
+<mt-toast id="meetToast"></mt-toast>
+<!-- 公共对话框 -->
+<mt-dialog id="meetDialog"></mt-dialog>

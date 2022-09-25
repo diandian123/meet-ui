@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mt-avatar": "meet-ui-miniapp/avatar",
+        "mt-icon": "meet-ui-miniapp/icon",
+        "mt-toast": "meet-ui-miniapp/toast",
+        "mt-popup": "meet-ui-miniapp/popup"
+    }
+}

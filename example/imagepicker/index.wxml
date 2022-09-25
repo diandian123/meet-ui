@@ -1,0 +1,111 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="1"
+                            items="{{case_1}}"
+                            bind:change="handleChange">
+                        </mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">追加选择</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="2"
+                            items="{{case_2}}"
+                            bind:change="handleChange">
+                        </mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义最大上传数</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="4"
+                            items="{{case_3}}"
+                            maxCount="3"
+                            sortable="{{true}}"
+                            bind:change="handleChange"></mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">长按图片拖动排序</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="3"
+                            items="{{case_4}}"
+                            sortable="{{true}}"
+                            bind:change="handleChange"></mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">不可编辑</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="5"
+                            type="view"
+                            items="{{case_5}}">
+                        </mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义每行显示4列</view>
+                    <view class="pannel-bd pa">
+                        <mt-imagepicker
+                            data-index="6"
+                            items="{{case_6}}"
+                            column="4"
+                            maxCount="16"
+                            sortable="{{true}}"
+                            bind:change="handleChange"></mt-imagepicker>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" placeholder="请输入内容..."></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="textarea"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-textarea bdColor="null" placeholder="请输入内容..."></mt-textarea>
+                        </mt-field>
+                        <mt-field
+                            type="image-picker"
+                            direction="column"
+                            label="添加图片"
+                            required
+                            hasGap>
+                            <mt-imagepicker
+                                data-index="7"
+                                items="{{case_4}}"
+                                sortable="{{true}}"
+                                bind:change="handleChange"></mt-imagepicker>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

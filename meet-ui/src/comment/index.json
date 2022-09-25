@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-avatar": "../avatar",
+        "mt-icon": "../icon",
+        "mt-tag": "../tag"
+    }
+}

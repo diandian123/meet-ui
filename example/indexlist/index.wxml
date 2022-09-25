@@ -1,0 +1,81 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示头像</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo1">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示顶部标题栏</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo2">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示列表描述</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo4">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">列表项可移除</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo5">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">列表项可选择</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo6">演示</mt-button>
+                    </view>
+                </view>
+
+                <view class="pannel">
+                    <view class="pannel-hd">搜索栏应用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="showDemo7">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">弹层应用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="togglePopup">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-popup
+    visible="{{popupStatus}}"
+    bindclose="togglePopup"
+    maxHeight="85vh"
+    hasTopClose="{{false}}">
+    <view class="popup__header">
+        <view class="popup__cancel" bindtap="togglePopup">取消</view>
+        <view class="popup__title">
+            <view class="popup__class">标题信息</view>
+        </view>
+    </view>
+    <view style="height: 900rpx; position: relative;">
+        <index-list items="{{items}}" bindclick="itemClick" class=".index-list"></index-list>
+    </view>
+</mt-popup>

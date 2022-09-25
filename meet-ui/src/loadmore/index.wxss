@@ -1,0 +1,10 @@
+.mt-loadmore {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mt-loadmore__loading,
+.mt-loadmore__divider {
+  display: block;
+  height: 48rpx;
+  line-height: 48rpx;
+}

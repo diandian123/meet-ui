@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "mt-sticky": "meet-ui-miniapp/sticky",
+        "mt-search": "meet-ui-miniapp/search",
+        "mt-tab": "meet-ui-miniapp/tab",
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-cell": "meet-ui-miniapp/cell"
+    }
+}

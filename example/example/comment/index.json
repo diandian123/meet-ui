@@ -1,0 +1,14 @@
+{
+    "navigationBarTitleText": "评论区交互（示例）",
+    "usingComponents": {
+        "mt-switch-bar": "meet-ui-miniapp/switch-bar",
+        "mt-comment": "meet-ui-miniapp/comment/index",
+        "mt-loadmore": "meet-ui-miniapp/loadmore/index",
+        "mt-feedback-bar": "meet-ui-miniapp/feedback-bar/index",
+        "mt-actionsheet": "meet-ui-miniapp/actionsheet/index",
+        "mt-popup": "meet-ui-miniapp/popup/index",
+        "mt-toast": "meet-ui-miniapp/toast/index",
+        "comment-input": "./components/comment-input/index",
+        "comment-reply": "./components/comment-reply/index"
+    }
+}

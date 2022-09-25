@@ -1,0 +1,1 @@
+<slot wx:if="{{value === '0' || value === 0}}"></slot><view wx:else class="mt-badge {{'mt-badge--' + type}}"><slot></slot><view class="mt-badge__bd {{'mt-badge__bd--' + position}} {{value.length === 1 ? 'mt-badge__bd--one' : '' }}">{{content}}</view></view>

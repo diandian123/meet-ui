@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mt-grid": "meet-ui-miniapp/grid",
+        "mt-navbar": "meet-ui-miniapp/navbar"
+    }
+}

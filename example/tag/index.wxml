@@ -1,0 +1,92 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag class="mr20">标签一</mt-tag>
+                            <mt-tag class="mr20">标签二</mt-tag>
+                            <mt-tag class="mr20">标签三</mt-tag>
+                            <mt-tag class="mr20">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义文本颜色</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag textColor="#07c16c" bgColor="#ecfbf4" class="mr20">标签一</mt-tag>
+                            <mt-tag textColor="#4876ff" bgColor="#ecf1ff" class="mr20">标签二</mt-tag>
+                            <mt-tag textColor="#fec51d" bgColor="#fef9e8" class="mr20">标签三</mt-tag>
+                            <mt-tag textColor="#fa5151" bgColor="#fdeae8" class="mr20">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义背景颜色</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag bgColor="#07c16c" textColor="#fff" class="mr20">标签一</mt-tag>
+                            <mt-tag bgColor="#4876ff" textColor="#fff" class="mr20">标签二</mt-tag>
+                            <mt-tag bgColor="#fec51d" textColor="#fff" class="mr20">标签三</mt-tag>
+                            <mt-tag bgColor="#fa5151" textColor="#fff" class="mr20">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义边框颜色</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag bdColor="#07c16c" bgColor="transparent" textColor="#07c16c" class="mr20">标签一</mt-tag>
+                            <mt-tag bdColor="#4876ff" bgColor="transparent" textColor="#4876ff" class="mr20">标签二</mt-tag>
+                            <mt-tag bdColor="#fec51d" bgColor="transparent" textColor="#fec51d" class="mr20">标签三</mt-tag>
+                            <mt-tag bdColor="#fa5151" bgColor="transparent" textColor="#fa5151" class="mr20">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义圆角</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag radius="100" padding="12rpx 20rpx" class="mr20">标签一</mt-tag>
+                            <mt-tag radius="100" padding="12rpx 20rpx" class="mr20">标签二</mt-tag>
+                            <mt-tag radius="100" padding="12rpx 20rpx" class="mr20">标签三</mt-tag>
+                            <mt-tag radius="100" padding="12rpx 20rpx" class="mr20">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义标签最大宽度</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag maxWidth="200" class="mr20">很长的标签名很长的标签名</mt-tag>
+                            <mt-tag maxWidth="200" class="mr20">很长的标签名很长的标签名</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义标签字号</view>
+                    <view class="pannel-bd">
+                        <mt-cell>
+                            <mt-tag textSize="26" class="mr20">标签一</mt-tag>
+                            <mt-tag textSize="28" padding="12rpx 16rpx" class="mr20">标签二</mt-tag>
+                            <mt-tag textSize="30" padding="12rpx 20rpx" class="mr20">标签三</mt-tag>
+                            <mt-tag textSize="32" padding="12rpx 20rpx">标签四</mt-tag>
+                        </mt-cell>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

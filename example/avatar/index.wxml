@@ -1,0 +1,199 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="圆形">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="方形">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png" radius="24"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示阴影</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="带阴影">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        hasShadow>
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="带阴影">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        hasShadow>
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义描边颜色</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="灰色描边">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        bdColor="#eeeeee">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="绿色描边">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        bdColor="#07c16c">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">头像尺寸</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="大号">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="中号">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png" size="m"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="小号">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png" size="s"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="特小号">
+                                <view slot="left">
+                                    <mt-avatar src="/example/images/avatar.png" size="xs"></mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义头像标识</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell title="qq标识">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        mark="qq">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="wx标识">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        mark="wx">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="大V标识">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        mark="V">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                            <mt-cell title="角色标识">
+                                <view slot="left">
+                                    <mt-avatar
+                                        src="/example/images/avatar.png"
+                                        mark="role"
+                                        markText="队长">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">头像叠加</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group clean>
+                            <mt-cell>
+                                <view>
+                                    <mt-avatar
+                                        size="s"
+                                        src="/example/images/avatar.png"
+                                        class="demo-avatar">
+                                    </mt-avatar>
+                                    <mt-avatar
+                                        size="s"
+                                        src="/example/images/avatar.png"
+                                        class="demo-avatar">
+                                    </mt-avatar>
+                                    <mt-avatar
+                                        size="s"
+                                        src="/example/images/avatar.png"
+                                        class="demo-avatar">
+                                    </mt-avatar>
+                                    <mt-avatar
+                                        size="s"
+                                        src="/example/images/avatar.png"
+                                        class="demo-avatar">
+                                    </mt-avatar>
+                                </view>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">{{case_1.title}}</view>
+                    <view class="pannel-bd">
+                        <mt-cell-group type="avatar" clean>
+                            <mt-cell
+                                wx:for="{{case_1.list}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                hasArrow>
+                                <mt-badge slot="left" position="top" value="{{item.badge}}">
+                                    <mt-avatar
+                                        slot="left"
+                                        radius="24"
+                                        src="{{item.image}}">
+                                    </mt-avatar>
+                                </mt-badge>
+                            </mt-cell>
+                        </mt-cell-group>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

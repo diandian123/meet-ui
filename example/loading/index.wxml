@@ -1,0 +1,65 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">圆形动画</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示横向文本</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading text="加载中"></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示纵向文本</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading direction="column" text="加载中"></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">音符动画</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading type="line"></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义颜色</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading color="#aaaaaa" text="加载中"></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">局部加载动画</view>
+                    <view class="pannel-bd pa">
+                        <mt-loading height="500" direction="column" text="正在加载"></mt-loading>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">页面启动（一）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toFullPage">演示</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">页面启动（二）</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toLaunchPage">演示</mt-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

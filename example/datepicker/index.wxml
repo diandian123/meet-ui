@@ -1,0 +1,154 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择日期" position="right" hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="date"
+                                placeholder="请选择日期"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">默认选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择日期" position="right" hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="date"
+                                value="2022/6/18"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">限定年度范围</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="picker"
+                            label="选择日期"
+                            position="right"
+                            hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="date"
+                                maxYear="{{2022}}"
+                                minYear="{{2018}}"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">仅选择年月</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择年月" position="right" hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="year-month"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">时间选择</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择时间" position="right" hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="time"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义分钟间隔</view>
+                    <view class="pannel-bd">
+                        <mt-field type="picker" label="选择时间" position="right" hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="time"
+                                minuteGap="{{10}}"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">选择日期 + 时间</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="picker"
+                            label="选择时间"
+                            position="right"
+                            hasDivider="{{false}}">
+                            <mt-datepicker
+                                type="datetime"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">点击按钮触发</view>
+                    <view class="pannel-bd pa">
+                        <mt-button type="plain" size="m" bindtap="showDatePicker">选择日期</mt-button>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单样式</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            position="right"
+                            required
+                            hasDivider>
+                            <mt-input bdColor="null" hasClear="{{false}}" placeholder="请输入内容"></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="picker"
+                            label="选择日期"
+                            position="right"
+                            hasDivider>
+                            <mt-datepicker
+                                type="date"
+                                placeholder="请选择日期"
+                                bind:confirm="handleConfirm" />
+                        </mt-field>
+                        <mt-field
+                            type="picker"
+                            label="选择日期"
+                            position="right"
+                            required>
+                            <mt-datepicker
+                                type="date"
+                                value="2022/6/18"
+                                bind:confirm="handleConfirm" />
+
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-datepicker
+    id="datePicker"
+    trigger="button"
+    type="date"
+    bind:confirm="handleConfirm" />
+<mt-toast id="meetToast"></mt-toast>
+<mt-dialog id="meetDialog"></mt-dialog>

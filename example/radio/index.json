@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "mt-cell-group": "meet-ui-miniapp/cell-group",
+        "mt-cell": "meet-ui-miniapp/cell",
+        "mt-radio-group": "meet-ui-miniapp/radio-group",
+        "mt-radio": "meet-ui-miniapp/radio",
+        "mt-field": "meet-ui-miniapp/field",
+        "mt-input": "meet-ui-miniapp/input"
+    }
+}

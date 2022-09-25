@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-badge": "meet-ui-miniapp/badge",
+        "mt-avatar": "meet-ui-miniapp/avatar"
+    }
+}

@@ -1,0 +1,35 @@
+<view class="details">
+    <view class="details-main">
+        <view class="section">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-bd">
+                        <mt-cell-group type="card" rowGap="36">
+                            <mt-cell
+                                wx:for="{{items}}"
+                                wx:key="index"
+                                title="{{item.title}}"
+                                desc="{{item.desc}}"
+                                radius="16"
+                                hasArrow>
+                                <mt-avatar
+                                    slot="left"
+                                    src="{{item.avatar}}">
+                                </mt-avatar>
+                            </mt-cell>
+                        </mt-cell-group>
+                        <mt-loadmore
+                            loadingColor="#fff"
+                            dividerTextColor="#fff"
+                            hasMore="{{hasMore}}">
+                        </mt-loadmore>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

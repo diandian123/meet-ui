@@ -1,0 +1,239 @@
+<view class="container details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox
+                            checked="{{case_1.checked}}"
+                            bindchange="case1Change">{{case_1.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox
+                            checked="{{case_2.checked}}"
+                            bindchange="case2Change">{{case_2.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox disabled>禁用状态</mt-checkbox>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">框选类型</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox
+                            type="square"
+                            checked="{{case_3.checked}}"
+                            bindchange="case3Change">{{case_3.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox
+                            type="square"
+                            checked="{{case_4.checked}}"
+                            bindchange="case4Change">{{case_4.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox type="square" disabled>禁用状态</mt-checkbox>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">按钮类型</view>
+                    <view class="pannel-bd pa">
+                        <view class="mb">
+                            <mt-checkbox
+                                type="button"
+                                checked="{{case_5.checked}}"
+                                bindchange="case5Change">{{case_5.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        </view>
+                        <view class="mb">
+                            <mt-checkbox
+                                type="button"
+                                checked="{{case_6.checked}}"
+                                bindchange="case6Change">{{case_6.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        </view>
+                        <view class="mb">
+                            <mt-checkbox type="button" disabled>禁用状态</mt-checkbox>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义颜色</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox
+                            checkedColor="#4876ff"
+                            checked="{{case_8.checked}}"
+                            bindchange="case8Change">{{case_8.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox
+                            checkedColor="#fec51d"
+                            checked="{{case_9.checked}}"
+                            bindchange="case9Change">{{case_9.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                        <mt-checkbox
+                            checkedColor="#fa5151"
+                            checked="{{case_10.checked}}"
+                            bindchange="case10Change">{{case_10.checked ? '选中状态' : '未选状态'}}</mt-checkbox>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">勾选协议</view>
+                    <view class="pannel-bd">
+                        <view class="agreement">
+                            <mt-checkbox
+                                checked="{{case_7.checked}}"
+                                bindchange="case7Change">我已详细阅读并同意</mt-checkbox>
+                            <view>
+                                <navigator url="" class="agreement__link">服务协议</navigator>和<navigator url=""
+                                    class="agreement__link">隐私政策</navigator>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">二列显示</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox-group
+                            type="button"
+                            items="{{group_1.items}}"
+                            column="2"
+                            maxCount="6"
+                            bindchange="group1Change">
+                        </mt-checkbox-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多选列表（一）</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox-group
+                            title="{{group_2.title}}"
+                            items="{{group_2.items}}"
+                            bindchange="group2Change">
+                        </mt-checkbox-group>
+                        <mt-checkbox-group
+                            title="{{group_3.title}}"
+                            items="{{group_3.items}}"
+                            bindchange="group3Change">
+                        </mt-checkbox-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多选列表（二）</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox-group
+                            iconPosition="right"
+                            title="{{group_4.title}}"
+                            items="{{group_4.items}}"
+                            bindchange="group4Change">
+                        </mt-checkbox-group>
+                        <mt-checkbox-group
+                            iconPosition="right"
+                            title="{{group_5.title}}"
+                            items="{{group_5.items}}"
+                            bindchange="group5Change">
+                        </mt-checkbox-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多选列表（三）</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox-group
+                            type="button"
+                            title="{{group_6.title}}"
+                            items="{{group_6.items}}"
+                            bindchange="group6Change">
+                        </mt-checkbox-group>
+                        <mt-checkbox-group
+                            type="button"
+                            title="{{group_7.title}}"
+                            items="{{group_7.items}}"
+                            bindchange="group7Change">
+                        </mt-checkbox-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">多选列表（四）</view>
+                    <view class="pannel-bd">
+                        <mt-checkbox-group
+                            direction="row"
+                            title="{{group_8.title}}"
+                            items="{{group_8.items}}"
+                            bindchange="group8Change">
+                        </mt-checkbox-group>
+                        <mt-checkbox-group
+                            direction="row"
+                            title="{{group_9.title}}"
+                            items="{{group_9.items}}"
+                            bindchange="group9Change">
+                        </mt-checkbox-group>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（一）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" placeholder="请输入内容..."></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="checkbox"
+                            direction="column"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-checkbox-group
+                                direction="row"
+                                items="{{group_8.items}}"
+                                bindchange="group8Change">
+                            </mt-checkbox-group>
+                        </mt-field>
+                        <mt-field
+                            type="checkbox"
+                            direction="column"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-checkbox-group
+                                direction="row"
+                                items="{{group_9.items}}"
+                                bindchange="group9Change">
+                            </mt-checkbox-group>
+                        </mt-field>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">表单应用（二）</view>
+                    <view class="pannel-bd">
+                        <mt-field
+                            type="input"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-input bdColor="null" placeholder="请输入内容..."></mt-input>
+                        </mt-field>
+                        <mt-field
+                            type="checkbox"
+                            label="字段名称"
+                            hasDivider>
+                            <mt-checkbox-group
+                                direction="row"
+                                items="{{group_8.items}}"
+                                bindchange="group8Change">
+                            </mt-checkbox-group>
+                        </mt-field>
+                        <mt-field
+                            type="checkbox"
+                            label="字段名称"
+                            required
+                            hasGap>
+                            <mt-checkbox-group
+                                direction="row"
+                                items="{{group_9.items}}"
+                                bindchange="group9Change">
+                            </mt-checkbox-group>
+                        </mt-field>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

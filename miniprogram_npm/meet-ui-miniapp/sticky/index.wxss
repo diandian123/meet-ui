@@ -1,0 +1,1 @@
+.mt-sticky{position:relative}.mt-sticky-warp{position:fixed;transition:transform 1s}

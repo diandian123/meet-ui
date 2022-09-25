@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-dropdown": "meet-ui-miniapp/dropdown",
+        "mt-icon": "meet-ui-miniapp/icon"
+    }
+}

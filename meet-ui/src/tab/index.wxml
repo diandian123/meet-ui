@@ -1,0 +1,43 @@
+<view class="mt-tab mt-tab--{{position}}" style="opacity: {{opacity}};">
+    <!-- 选项头 吸顶  -->
+    <block wx:if="{{sticky}}">
+        <mt-sticky container="{{container}}" offsetTop="{{offsetTop}}" scrollTop="{{scrollTop}}">
+            <include src="./header.wxml" />
+        </mt-sticky>
+    </block>
+    <!-- 选项头 不吸顶  -->
+    <block wx:else>
+        <include src="./header.wxml" />
+    </block>
+    <!-- 选项头溢出屏幕边沿虚化效果 -->
+    <view wx:if="{{blurEffect}}" class="mt-tab__blur"></view>
+    <!-- 选项内容 点击切换 -->
+    <block wx:if="{{type === 'click'}}">
+        <view class="mt-tab__bd" style="{{contentHeight > 10 ? 'height:' + contentHeight + 'px;' : 'height: auto'}}">
+            <view
+                wx:for="{{items}}"
+                wx:key="index"
+                class="mt-tab__content"
+                wx:if="{{index == selectedIndex}}">
+                <slot name="{{item.id ? item.id : 'tab-' + index}}"></slot>
+            </view>
+        </view>
+    </block>
+    <!-- 选项内容 滑动切换 -->
+    <block wx:else>
+        <swiper
+            bindchange="handleSwiper"
+            duration="300"
+            current="{{selectedIndex}}"
+            vertical="{{position==='left'}}"
+            class="mt-tab__bd"
+            style="{{contentHeight > 10 ? 'height:' + contentHeight + 'px;': 'height: 500rpx'}}">
+            <swiper-item
+                wx:for="{{items}}"
+                wx:key="index"
+                class="mt-tab__content">
+                <slot name="{{item.id ? item.id : 'tab-' + index}}"></slot>
+            </swiper-item>
+        </swiper>
+    </block>
+</view>

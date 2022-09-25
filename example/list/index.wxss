@@ -1,0 +1,17 @@
+.pannel {
+    background: transparent;
+}
+.cell__rt__image {
+    width: 130rpx;
+    height: 86rpx;
+    border-radius: 8rpx;
+}
+.cell__group {
+    display: block;
+    border-radius: 16rpx;
+    overflow: hidden;
+}
+
+.mt-cell__icon {
+    border-radius: 50%;
+}

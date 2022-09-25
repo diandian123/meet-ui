@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mt-popup": "meet-ui-miniapp/popup/index",
+        "mt-textarea": "meet-ui-miniapp/textarea/index",
+        "mt-button": "meet-ui-miniapp/button/index"
+    }
+}

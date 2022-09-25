@@ -1,0 +1,121 @@
+<view class="details">
+    <view class="details-header">
+        <mt-cell title="{{compTitle}}">
+            <mt-icon slot="left" type="custom" name="{{compIcon}}" size="64" class="component-icon"></mt-icon>
+        </mt-cell>
+    </view>
+    <view class="details-main">
+        <view class="section section--ext">
+            <view class="section-hd">
+                <view class="section-hd__text">示例</view>
+                <text class="section-hd__icon"></text>
+            </view>
+            <view class="section-bd">
+                <view class="pannel">
+                    <view class="pannel-hd">基础使用</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet1">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet1.visible}}"
+                            desc="{{actionsheet1.desc}}"
+                            items="{{actionsheet1.items}}"
+                            bindselect="handleSelect1"
+                            bindcancel="toggleActionSheet1"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义默认选中项</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet2">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet2.visible}}"
+                            desc="{{actionsheet2.desc}}"
+                            items="{{actionsheet2.items}}"
+                            current="{{actionsheet2.current}}"
+                            bindselect="handleSelect2"
+                            bindcancel="toggleActionSheet2"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义选项颜色</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet3">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet3.visible}}"
+                            desc="{{actionsheet3.desc}}"
+                            items="{{actionsheet3.items}}"
+                            bindselect="handleSelect3"
+                            bindcancel="toggleActionSheet3"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">定义选项图标</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet4">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet4.visible}}"
+                            desc="{{actionsheet4.desc}}"
+                            items="{{actionsheet4.items}}"
+                            bindselect="handleSelect4"
+                            bindcancel="toggleActionSheet4"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">选项左对齐</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet5">演示</mt-button>
+                        <mt-actionSheet
+                            itemPositon="left"
+                            visible="{{actionsheet5.visible}}"
+                            desc="{{actionsheet5.desc}}"
+                            items="{{actionsheet5.items}}"
+                            bindselect="handleSelect5"
+                            bindcancel="toggleActionSheet5"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">选项超出滚动</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet6">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet6.visible}}"
+                            desc="{{actionsheet6.desc}}"
+                            items="{{actionsheet6.items}}"
+                            current="{{actionsheet6.current}}"
+                            bindselect="handleSelect6"
+                            bindcancel="toggleActionSheet6"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">微信特性选项</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet7">演示</mt-button>
+                        <mt-actionSheet
+                            visible="{{actionsheet7.visible}}"
+                            desc="{{actionsheet7.desc}}"
+                            items="{{actionsheet7.items}}"
+                            bindselect="handleSelect7"
+                            bindcancel="toggleActionSheet7"
+                            bindgetuserinfo="getUserInfo"
+                            bindgetphonenumber="getPhoneNumber"></mt-actionSheet>
+                    </view>
+                </view>
+                <view class="pannel">
+                    <view class="pannel-hd">显示下一步</view>
+                    <view class="pannel-bd p60">
+                        <mt-button type="plain" size="m" bindtap="toggleActionSheet8">演示</mt-button>
+                        <mt-actionSheet
+                            type="confirm"
+                            visible="{{actionsheet8.visible}}"
+                            desc="{{actionsheet8.desc}}"
+                            items="{{actionsheet8.items}}"
+                            current="{{actionsheet8.current}}"
+                            bindconfirm="confirmActionSheet"
+                            bindcancel="toggleActionSheet8"></mt-actionSheet>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<mt-toast id="meetToast"></mt-toast>

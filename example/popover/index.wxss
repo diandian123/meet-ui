@@ -1,0 +1,12 @@
+.popover {
+    padding: 36rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom {
+    width: 80vw;
+}
+.custom {
+    box-shadow: 0 0 6rpx 0 rgba(233, 233, 233, 0.37);
+}

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mt-empty": "meet-ui-miniapp/empty"
+    }
+}

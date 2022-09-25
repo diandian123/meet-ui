@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "mt-search": "meet-ui-miniapp/search",
+        "mt-toast": "meet-ui-miniapp/toast"
+    }
+}
