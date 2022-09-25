@@ -1,0 +1,22 @@
+{
+    "name": "meet-ui",
+    "version": "1.0.2",
+    "description": "一套简约、清新、高可用微信小程序组件库，重新定义用户界面、用户交互、用户体验！",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/diandian123/meet-ui.git"
+    },
+    "author": "jayen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/diandian123/meet-ui/issues"
+    },
+    "homepage": "https://github.com/diandian123/meet-ui#readme",
+    "dependencies": {
+        "meet-ui-miniapp": "^1.0.2"
+    }
+}
